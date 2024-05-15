@@ -1,7 +1,13 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import styles from "./page.module.css"
+import Link from "next/link";
+import logo from "../../public/brand-logo.png"
+import Image from "next/image";
+import localFont from 'next/font/local'
 
 const inter = Inter({ subsets: ["latin"] });
+const eudoxus = localFont({src: "../../public/Eudoxus-Sans-main/Eudoxus-Sans-font/EudoxusSans-Regular.woff2"})
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +17,69 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+          <div className={`${styles.globalcontent} ${eudoxus.className}`}>
+            <header>
+              <div className={styles.headerContainer}>
+                <div className={styles.logoContainer}><Link href='/'><Image className={styles.logo} src={logo} sizes="100vw"></Image></Link></div>
+                <div className={styles.headerDiv2}>
+                  <div>
+                    <ul>
+                      <li><Link href='/'>Demo</Link></li>
+                      <li><Link href='/'>Style Guide</Link></li>
+                      <li><Link href='/'>Membership</Link></li>
+                      <li><Link href='/'>dropdown</Link></li>
+                      <li><Link href='/'>Search</Link></li>
+                      <li><Link href='/'>Join</Link></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </header>
+              <main>
+                {children}
+              </main>
+            <footer>
+              <div className={styles.footerContent}>
+                <div className={styles.footersubscribe}>
+                  <h3>Subscribe to New Post</h3>
+                  <div>
+                    <div>
+                      <form>
+                        <input type="email" placeholder="Your Email Address"></input>
+                        <button type="submit">Subscribe</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.footerbuttom}>
+                  <div className={styles.footerbuttom_top}>
+                    <div className={styles.footerbuttom_logo_container}>
+                      <div className={styles.logoContainer}><Link href='/'><Image className={styles.logo} src={logo} sizes="100vw"></Image></Link></div>
+                      <p>A minimal, functional theme for running a paid-membership publication on Ghost.</p>
+                    </div>
+                    <div className={styles.footerbuttom_nav}>
+                      <div className={styles.footernav_card}>
+                        <h4>Social</h4>
+                        <ul>
+                          <li><Link href='/'>Twitter</Link></li>
+                          <li><Link href='/'>Instagram</Link></li>
+                          <li><Link href='/'>linkedin</Link></li>
+                          <li><Link href='/'>Youtube</Link></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={styles.footerbuttom_down}>
+                    <p>© Cleva Platforms Nigeria Limited 2024.</p>
+                  </div>
+                  
+
+                </div>
+              </div>
+            </footer>
+        </div>
+      </body>
     </html>
   );
 }

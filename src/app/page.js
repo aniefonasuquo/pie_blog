@@ -1,95 +1,202 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
+import img1 from '../../public/img1.jpg'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className={styles.main}>
+      <div className={styles.hero_global_wrap}>
+        <div className={styles.herowrap}>
+          <div>
+            <h2 className={styles.herotextwrap}>Connecting People, Projects and Products worldwide</h2>
+          </div>
+          <div className={styles.hero_subscribe_wrap}>
+            <div><Link href='/'><button>Become a subscriber</button></Link></div>
+            <div className={styles.hero_subscribe_text}><span>Get the email newsletter and unlock access to members-only content and updates</span></div>
+          </div>
+        </div>
+        <div className={styles.featured_section_wrap}>
+        <div className={styles.featured_section_top}>
+          <p>Get started with our best stories</p>
+          <div className={styles.feature_scroll}>
+            <div>Prev</div>
+            <div>Next</div>
+          </div>
+        </div>
+        <div className={styles.featured_row}>
+        <div className={styles.featured_scroll}>
+          <div className={styles.article_card_wrap}>
+            <div className={styles.article_img_container}>
+              <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+            </div>
+            <div className={styles.article_category_container}>
+              <div className={styles.article_category}>Health</div>
+              <div className={styles.article_category}>Wealth</div>
+              <div className={styles.article_category}>Money</div>
+            </div>
+            <div className={styles.article_brief_container}>
+              <h4>New Technology is Not Good In and Of itself</h4>
+              <p>Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis augue, imperdiet at sodales a,</p>
+            </div>
+          </div>
+          <div className={styles.article_card_wrap}>
+            <div className={styles.article_img_container}>
+              <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+            </div>
+            <div className={styles.article_category_container}>
+              <div className={styles.article_category}>Health</div>
+              <div className={styles.article_category}>Wealth</div>
+              <div className={styles.article_category}>Money</div>
+            </div>
+            <div className={styles.article_brief_container}>
+              <h4>New Technology is Not Good In and Of itself</h4>
+              <p>Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis augue, imperdiet at sodales a,</p>
+            </div>
+          </div>
+          <div className={styles.article_card_wrap}>
+            <div className={styles.article_img_container}>
+              <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+            </div>
+            <div className={styles.article_category_container}>
+              <div className={styles.article_category}>Health</div>
+              <div className={styles.article_category}>Wealth</div>
+              <div className={styles.article_category}>Money</div>
+            </div>
+            <div className={styles.article_brief_container}>
+              <h4>New Technology is Not Good In and Of itself</h4>
+              <p>Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis augue, imperdiet at sodales a,</p>
+            </div>
+          </div>
+          <div className={styles.article_card_wrap}>
+            <div className={styles.article_img_container}>
+              <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+            </div>
+            <div className={styles.article_category_container}>
+              <div className={styles.article_category}>Health</div>
+              <div className={styles.article_category}>Wealth</div>
+              <div className={styles.article_category}>Money</div>
+            </div>
+            <div className={styles.article_brief_container}>
+              <h4>New Technology is Not Good In and Of itself</h4>
+              <p>Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis augue, imperdiet at sodales a,</p>
+            </div>
+          </div>
+          <div className={styles.article_card_wrap}>
+            <div className={styles.article_img_container}>
+              <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+            </div>
+            <div className={styles.article_category_container}>
+              <div className={styles.article_category}>Health</div>
+              <div className={styles.article_category}>Wealth</div>
+              <div className={styles.article_category}>Money</div>
+            </div>
+            <div className={styles.article_brief_container}>
+              <h4>New Technology is Not Good In and Of itself</h4>
+              <p>Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis augue, imperdiet at sodales a,</p>
+            </div>
+          </div>
+          <div className={styles.article_card_wrap}>
+            <div className={styles.article_img_container}>
+              <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+            </div>
+            <div className={styles.article_category_container}>
+              <div className={styles.article_category}>Health</div>
+              <div className={styles.article_category}>Wealth</div>
+              <div className={styles.article_category}>Money</div>
+            </div>
+            <div className={styles.article_brief_container}>
+              <h4>New Technology is Not Good In and Of itself</h4>
+              <p>Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis augue, imperdiet at sodales a,</p>
+            </div>
+          </div>
+
+          </div>
+      </div>
+      </div>
+
+        
+      </div>
+      <div className={styles.loop_global_wrap}>
+      <div className={styles.loop_section}>
+        <div className={styles.loop_section_top}>
+          <div>See what we’ve written lately</div>
+          <div className={styles.category_illustrations_container}>
+            <div className={styles.category_illustrations}>
+              <div className={styles.illustration_1}></div>
+              <div className={styles.illustration_2}></div>
+              <div className={styles.illustration_3}></div>
+              <div className={styles.illustration_4}></div>
+              <div className={styles.illustration_5}></div>
+            </div>
+            <p>Meet our top authors</p>
+          </div>
+        </div>
+        <div className={styles.loop_section_wrap}>
+          <div className={styles.loop_article_card_wrap}>
+            <div className={styles.article_img_container}>
+                <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+            </div>
+            <div className={styles.article_category_container}>
+                <div className={styles.article_category}>Health</div>
+                <div className={styles.article_category}>Wealth</div>
+                <div className={styles.article_category}>Money</div>
+            </div>
+            <div className={styles.article_brief_container}>
+                <h4>New Technology is Not Good In and Of itself</h4>
+                <p>Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis augue, imperdiet at sodales a,</p>
+            </div>
+          </div>
+          <div className={styles.loop_article_card_wrap}>
+            <div className={styles.article_img_container}>
+                <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+            </div>
+            <div className={styles.article_category_container}>
+                <div className={styles.article_category}>Health</div>
+                <div className={styles.article_category}>Wealth</div>
+                <div className={styles.article_category}>Money</div>
+            </div>
+            <div className={styles.article_brief_container}>
+                <h4>New Technology is Not Good In and Of itself</h4>
+                <p>Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis augue, imperdiet at sodales a,</p>
+            </div>
+          </div>
+          <div className={styles.loop_article_card_wrap}>
+            <div className={styles.article_img_container}>
+                <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+            </div>
+            <div className={styles.article_category_container}>
+                <div className={styles.article_category}>Health</div>
+                <div className={styles.article_category}>Wealth</div>
+                <div className={styles.article_category}>Money</div>
+            </div>
+            <div className={styles.article_brief_container}>
+                <h4>New Technology is Not Good In and Of itself</h4>
+                <p>Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis augue, imperdiet at sodales a,</p>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      <div className={styles.pagination_section}>
+        <button>Load More</button></div>  
+      <div className={styles.recomwnded_section}>
+        <div>Recommended</div>
+        <div className={styles.recomwnded_section_row}>
+          <div className={styles.recom_article_card_wrap}>
+            <div className={styles.article_img_container}>
+                <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+            </div>
+            <div className={styles.article_brief_container}>
+                <h4>New Technology is Not Good In and Of itself</h4>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }
