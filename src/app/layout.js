@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           <div className={`${styles.globalcontent} ${eudoxus.className}`}>
             <header>
               <div className={styles.headerContainer}>
-                <div className={styles.logoContainer}><Link href='/'><Image className={styles.logo} src={logo} sizes="100vw"></Image></Link></div>
+                <div className={styles.logoContainer}><Link href='/'><Image alt="image" className={styles.logo} src={logo} sizes="100vw"></Image></Link></div>
                 <div className={styles.headerDiv2}>
                   <div>
                     <ul>
@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
                 <div className={styles.footerbuttom}>
                   <div className={styles.footerbuttom_top}>
                     <div className={styles.footerbuttom_logo_container}>
-                      <div className={styles.logoContainer}><Link href='/'><Image className={styles.logo} src={logo} sizes="100vw"></Image></Link></div>
+                      <div className={styles.logoContainer}><Link href='/'><Image alt="image" className={styles.logo} src={logo} sizes="100vw"></Image></Link></div>
                       <p>A minimal, functional theme for running a paid-membership publication on Ghost.</p>
                     </div>
                     <div className={styles.footerbuttom_nav}>

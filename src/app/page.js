@@ -28,7 +28,7 @@ export default function Home() {
         <div className={styles.featured_scroll}>
           <div className={styles.article_card_wrap}>
             <div className={styles.article_img_container}>
-              <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+              <Image alt="image" className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
             </div>
             <div className={styles.article_category_container}>
               <div className={styles.article_category}>Health</div>
@@ -42,7 +42,7 @@ export default function Home() {
           </div>
           <div className={styles.article_card_wrap}>
             <div className={styles.article_img_container}>
-              <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+              <Image alt="image" className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
             </div>
             <div className={styles.article_category_container}>
               <div className={styles.article_category}>Health</div>
@@ -56,7 +56,7 @@ export default function Home() {
           </div>
           <div className={styles.article_card_wrap}>
             <div className={styles.article_img_container}>
-              <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+              <Image alt="image" className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
             </div>
             <div className={styles.article_category_container}>
               <div className={styles.article_category}>Health</div>
@@ -70,7 +70,7 @@ export default function Home() {
           </div>
           <div className={styles.article_card_wrap}>
             <div className={styles.article_img_container}>
-              <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+              <Image alt="image" className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
             </div>
             <div className={styles.article_category_container}>
               <div className={styles.article_category}>Health</div>
@@ -84,7 +84,7 @@ export default function Home() {
           </div>
           <div className={styles.article_card_wrap}>
             <div className={styles.article_img_container}>
-              <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+              <Image alt="image" className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
             </div>
             <div className={styles.article_category_container}>
               <div className={styles.article_category}>Health</div>
@@ -98,7 +98,7 @@ export default function Home() {
           </div>
           <div className={styles.article_card_wrap}>
             <div className={styles.article_img_container}>
-              <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+              <Image alt="image" className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
             </div>
             <div className={styles.article_category_container}>
               <div className={styles.article_category}>Health</div>
@@ -135,7 +135,7 @@ export default function Home() {
         <div className={styles.loop_section_wrap}>
           <div className={styles.loop_article_card_wrap}>
             <div className={styles.article_img_container}>
-                <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+                <Image alt="image" className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
             </div>
             <div className={styles.article_category_container}>
                 <div className={styles.article_category}>Health</div>
@@ -149,7 +149,7 @@ export default function Home() {
           </div>
           <div className={styles.loop_article_card_wrap}>
             <div className={styles.article_img_container}>
-                <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+                <Image alt="image" className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
             </div>
             <div className={styles.article_category_container}>
                 <div className={styles.article_category}>Health</div>
@@ -163,7 +163,7 @@ export default function Home() {
           </div>
           <div className={styles.loop_article_card_wrap}>
             <div className={styles.article_img_container}>
-                <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+                <Image alt="image" className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
             </div>
             <div className={styles.article_category_container}>
                 <div className={styles.article_category}>Health</div>
@@ -185,7 +185,7 @@ export default function Home() {
         <div className={styles.recomwnded_section_row}>
           <div className={styles.recom_article_card_wrap}>
             <div className={styles.article_img_container}>
-                <Image className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
+                <Image alt="image" className={styles.featured_post_img} src={img1} sizes="100vw"></Image>
             </div>
             <div className={styles.article_brief_container}>
                 <h4>New Technology is Not Good In and Of itself</h4>
