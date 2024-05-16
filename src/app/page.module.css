@@ -5,10 +5,11 @@
 }
 
 .footersubscribe form button,
-.hero_subscribe_wrap button {
+.hero_subscribe_wrap button,
+.pagination_section button {
   font-size: 1.8rem;
-  color: white;
-  padding: 0.75em;
+  color: rgb(52,54,95);
+  padding: 0.6em;
   border-style: none;
   background-color: palevioletred;
   border-radius: 2rem;
@@ -27,7 +28,10 @@
 }
 
 .loop_global_wrap {
-  background-color: bisque;
+  color: rgba(52, 54, 94, 1);
+
+  /* background-color:rgba(255, 192, 187, 0.11); */
+
 }
 
 
@@ -39,11 +43,11 @@
   min-height: 90px;
   padding-bottom: 2vh;
   flex-wrap: wrap;
-  border-bottom: 1px grey solid;
 }
 
 .logoContainer {
-  width: 200px;
+  width: 100%;
+  max-width: 90px;
 }
 
 .logo {
@@ -105,7 +109,7 @@
   padding: 0.5em 0.75em;
   border-style: none;
   background-color: transparent;
-  color: rgb(247, 247, 245);
+  color: rgba(255, 192, 187, 0.12);
   width: 100%;
   max-width: 250px;
 }
@@ -209,18 +213,17 @@
 
 /* featured section */
 .featured_section_wrap {
-  padding-bottom: 12vh;
+  padding-bottom: 2vh;
   /* background-color: bisque; */
   /* overflow: scroll; */
 }
 
 .featured_section_top {
-  border-top: 1px grey solid;
+  border-top: 1px rgba(255, 192, 187, 0.12) solid; 
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 2vh;
-  padding-top: 1.8vh;
+  padding: 5vh 0;
 }
 
 .featured_section_top div {
@@ -262,18 +265,18 @@
 
 .article_category_container {
   display: flex;
+  padding-top: 2em;
 }
 
 .article_category {
   font-size: 80%;
-  background-color: grey;
-  border: 1px white solid;
-  color: white;
+  background-color: rgba(255, 192, 187, 0.09);
+  border: none;
+  color: rgba(255, 192, 187, 1);
   border-radius: 2rem;
   padding: 0.5em;
   margin-right: 0.5em;
 }
-
 
 .article_card_wrap div,
 .article_card_wrap h4,
@@ -291,15 +294,16 @@
 .article_img_container {
   width: 100%;
   min-width: 300px;
-
+  overflow: hidden;
 }
 
 .article_img_container img {
-
+  
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 192, 187, 0.12);
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 2rem;
 }
 
 /* loop section */
@@ -416,9 +420,6 @@
   .herotextwrap {
     font-size: 1rem;
   }
-
-
-
   
 }
 @media (max-width: 668px) {
@@ -446,6 +447,11 @@
   .recomwnded_section
   {
     padding: 0 2vh;
+   }
+
+   .category_illustrations_container  {
+    display: none;
+    visibility: hidden;
    }
 
 

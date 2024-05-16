@@ -95,6 +95,7 @@ body {
 body {
   color: black;
 
+  background-color: rgba(255, 192, 187, 0.11);
   
   /* background-color: bisque; */
   /* color: rgb(var(--foreground-rgb));
@@ -112,7 +113,6 @@ header, footer {
 }
 
 main {
-  background-color: bisque;
 }
 
 footer {
