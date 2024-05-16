@@ -9,7 +9,7 @@ export default function Home() {
       <div className={styles.hero_global_wrap}>
         <div className={styles.herowrap}>
           <div>
-            <h2 className={styles.herotextwrap}>Connecting People, Projects and Products worldwide</h2>
+            <h1 className={styles.herotextwrap}>Connecting People, Projects and Products worldwide</h1>
           </div>
           <div className={styles.hero_subscribe_wrap}>
             <div><Link href='/'><button>Become a subscriber</button></Link></div>
@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <div className={styles.featured_section_wrap}>
         <div className={styles.featured_section_top}>
-          <p>Get started with our best stories</p>
+          <h3>Get started with our best stories</h3>
           <div className={styles.feature_scroll}>
             <div>Prev</div>
             <div>Next</div>
@@ -120,7 +120,8 @@ export default function Home() {
       <div className={styles.loop_global_wrap}>
       <div className={styles.loop_section}>
         <div className={styles.loop_section_top}>
-          <div>See what we’ve written lately</div>
+          <div>
+            <h3>See what we’ve written lately</h3></div>
           <div className={styles.category_illustrations_container}>
             <div className={styles.category_illustrations}>
               <div className={styles.illustration_1}></div>
@@ -181,7 +182,8 @@ export default function Home() {
       <div className={styles.pagination_section}>
         <button>Load More</button></div>  
       <div className={styles.recomwnded_section}>
-        <div>Recommended</div>
+        <div>
+          <h3>Recommended</h3></div>
         <div className={styles.recomwnded_section_row}>
           <div className={styles.recom_article_card_wrap}>
             <div className={styles.article_img_container}>

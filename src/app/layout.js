@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
             <footer>
               <div className={styles.footerContent}>
                 <div className={styles.footersubscribe}>
-                  <h3>Subscribe to New Post</h3>
+                  <h2>Subscribe to New Post</h2>
                   <div>
                     <div>
                       <form>

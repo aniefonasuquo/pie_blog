@@ -1,3 +1,4 @@
+
 .globalcontent {
   display: flex;
   flex-direction: column;
@@ -27,6 +28,10 @@
   padding: 0 10vh;
 }
 
+.headerContainer {
+  margin: 0 auto;
+}
+
 .loop_global_wrap {
   color: rgba(52, 54, 94, 1);
 
@@ -41,7 +46,6 @@
   align-items: center;
   padding-bottom: 0.5em;
   min-height: 90px;
-  padding-bottom: 2vh;
   flex-wrap: wrap;
 }
 
@@ -83,7 +87,7 @@
   margin: 5vh 0;
 }
 
-.footersubscribe h3{
+.footersubscribe h2{
   font-size: 2rem;
   flex: 1 0 350px;
   padding-bottom: 1em;
@@ -194,8 +198,8 @@
 }
 
 .herotextwrap {
-  font-size: 6rem;
   max-width: 1340px;
+  padding-top: 6vh;
 }
 
 .hero_subscribe_wrap div{
