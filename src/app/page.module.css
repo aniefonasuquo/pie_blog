@@ -9,11 +9,6 @@
 .hero_subscribe_wrap button,
 .pagination_section button {
   font-size: 1.8rem;
-  color: rgb(52,54,95);
-  padding: 0.6em;
-  border-style: none;
-  background-color: palevioletred;
-  border-radius: 2rem;
 }
 
 .headerContainer,
@@ -389,14 +384,7 @@
 }
 
 .pagination_section button {
-  margin-top: 3vh;
-  margin-bottom: 14vh;
-  font-size: 1.8rem;
-  padding: 0.5em 1em;
-  border-radius: 100px;
-  text-align: center;
-  border: none;
-  background-color: palevioletred;
+
 }
 
 /* recommended section */
@@ -454,8 +442,10 @@
 
   }
 
-  .hero_subscribe_wrap button {
-    font-size: 1rem;
+  .footersubscribe form button,
+  .hero_subscribe_wrap button,
+  .pagination_section button {
+    font-size: 1.5rem;  
   }
 
   .headerContainer,

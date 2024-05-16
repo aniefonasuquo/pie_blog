@@ -145,6 +145,14 @@ li {
   list-style: none;
 }
 
+button {
+  color: rgb(52,54,95);
+  padding: 0.6em;
+  border-style: none;
+  background-color: rgba(255, 192, 187, 1);
+  border-radius: 2rem;
+}
+
 @media (max-width: 1024px) {
   h1 {
     font-size: var(--hero_heading_med_size);
