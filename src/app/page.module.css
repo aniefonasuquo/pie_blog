@@ -8,7 +8,7 @@
 .footersubscribe form button,
 .hero_subscribe_wrap button,
 .pagination_section button {
-  font-size: 1.8rem;
+
 }
 
 .headerContainer,
@@ -384,6 +384,8 @@
 }
 
 .pagination_section button {
+  background-color: rgba(52, 54, 94, 1);
+  color:  rgba(255, 192, 187, 1);
 
 }
 
@@ -440,12 +442,6 @@
 
   .herotextwrap {
 
-  }
-
-  .footersubscribe form button,
-  .hero_subscribe_wrap button,
-  .pagination_section button {
-    font-size: 1.2rem;  
   }
 
   .headerContainer,

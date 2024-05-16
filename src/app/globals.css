@@ -151,6 +151,9 @@ button {
   border-style: none;
   background-color: rgba(255, 192, 187, 1);
   border-radius: 2rem;
+  font-weight: 500;
+  padding: 0.6em 1.2em;
+  font-size: 1.8rem;
 }
 
 @media (max-width: 1024px) {
@@ -163,6 +166,10 @@ button {
 @media (max-width: 480px) {
   h1 {
     font-size: var(--hero_heading_small_size);
+  }
+
+  button {
+    font-size: 1.2em;
   }
 
 }
