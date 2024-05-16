@@ -420,12 +420,27 @@
   width: 100%;
 }
 
-@media (max-width: 480px) {
+
+
+@media (max-width: 1480px) {
   .herotextwrap {
-    font-size: 1rem;
+    margin-bottom: 4vh;
+  }
+}
+
+@media (max-width: 1280px) {
+  .herotextwrap {
+    
   }
   
+  
 }
+@media (max-width: 1024px) {
+
+
+}
+
+
 @media (max-width: 668px) {
 
   .headerDiv2 {
@@ -436,7 +451,7 @@
 
 
   .herotextwrap {
-    font-size: 4rem;
+
   }
 
   .hero_subscribe_wrap button {
@@ -457,26 +472,16 @@
     display: none;
     visibility: hidden;
    }
+}
 
+@media (max-width: 480px) {
+  .herotextwrap {
+  }
 
-
+  .feature_scroll {
+    visibility: hidden;
+    display: none;
+  }
 
   
-}
-@media (max-width: 1024px) {
-
-
-}
-@media (max-width: 1280px) {
-  .herotextwrap {
-    font-size: 7.6vw;
-  }
-
-
-}
-@media (max-width: 1480px) {
-  .herotextwrap {
-    font-size: 3rem;
-    margin-bottom: 4vh;
-  }
 }

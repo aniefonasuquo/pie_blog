@@ -82,7 +82,8 @@
 :root {
   --heading_size: 3vh;
   --hero_heading_size: 12vh;
-  --hero_heading_small_size: 3vh
+  --hero_heading_small_size: 5vh;
+  --hero_heading_med_size: 8vh
 }
 
 
@@ -144,9 +145,17 @@ li {
   list-style: none;
 }
 
+@media (max-width: 1024px) {
+  h1 {
+    font-size: var(--hero_heading_med_size);
+  }
+
+}
+
 @media (max-width: 480px) {
   h1 {
     font-size: var(--hero_heading_small_size);
   }
 
 }
+
