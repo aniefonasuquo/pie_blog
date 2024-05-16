@@ -467,5 +467,8 @@
     display: none;
   }
 
+  .footersubscribe form input{
+    font-size: 1.2rem;
+  }
   
 }
