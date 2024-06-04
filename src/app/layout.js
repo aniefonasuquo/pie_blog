@@ -5,6 +5,8 @@ import Link from "next/link";
 import logo from "../../public/brand-logo.png"
 import Image from "next/image";
 import localFont from 'next/font/local'
+import Header from "./components/header";
+
 
 const inter = Inter({ subsets: ["latin"] });
 const eudoxus = localFont({src: "../../public/Eudoxus-Sans-main/Eudoxus-Sans-font/EudoxusSans-Regular.woff2"})
@@ -19,23 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
           <div className={`${styles.globalcontent} ${eudoxus.className}`}>
-            <header>
-              <div className={styles.headerContainer}>
-                <div className={styles.logoContainer}><Link href='/'><Image alt="image" className={styles.logo} src={logo} sizes="100vw"></Image></Link></div>
-                <div className={styles.headerDiv2}>
-                  <div>
-                    <ul>
-                      <li><Link href='/'>Demo</Link></li>
-                      <li><Link href='/'>Style Guide</Link></li>
-                      <li><Link href='/'>Membership</Link></li>
-                      <li><Link href='/'>dropdown</Link></li>
-                      <li><Link href='/'>Search</Link></li>
-                      <li><Link href='/'>Join</Link></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </header>
+            <Header></Header>
               <main>
                 {children}
               </main>
@@ -56,7 +42,7 @@ export default function RootLayout({ children }) {
                   <div className={styles.footerbuttom_top}>
                     <div className={styles.footerbuttom_logo_container}>
                       <div className={styles.logoContainer}><Link href='/'><Image alt="image" className={styles.logo} src={logo} sizes="100vw"></Image></Link></div>
-                      <p>A minimal, functional theme for running a paid-membership publication on Ghost.</p>
+                      <p>Win with you financial </p>
                     </div>
                     <div className={styles.footerbuttom_nav}>
                       <div className={styles.footernav_card}>

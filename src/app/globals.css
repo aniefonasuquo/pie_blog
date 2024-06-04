@@ -163,6 +163,14 @@ button {
 
 }
 
+@media (max-width: 768px) {
+
+  header {
+    position: relative;
+  }
+
+}
+
 @media (max-width: 480px) {
   h1 {
     font-size: var(--hero_heading_small_size);
