@@ -119,6 +119,10 @@ header, footer {
   color: bisque;
 }
 
+header {
+  position: relative;
+}
+
 main {
 }
 
