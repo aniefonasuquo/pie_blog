@@ -64,10 +64,8 @@
 .loop_section_wrap {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  row-gap: 2rem;
-  column-gap: 2rem;
-  flex-wrap: wrap;
-  padding: 5em 0;
+  gap: 2rem;
+  padding: 1em 0;
  }
 
  .loop_article_card_wrap {

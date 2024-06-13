@@ -13,7 +13,7 @@ export default async function Loop ({page}) {
 
   return (<>
         <div className={styles.loop_section_top}>
-          <h3>See what we’ve written lately</h3>
+          <h2>See what we’ve written lately</h2>
           <div className={styles.category_illustrations_container}>
             <div className={styles.category_illustrations}>
               <div className={styles.illustration_1}></div>
