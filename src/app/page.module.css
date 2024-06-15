@@ -301,15 +301,9 @@
   padding-right: 2rem;
 }
 
-.featured_section {
-  cursor: grab;
-  position: relative;
-}
-
 .featured_row {
-  position: relative;
-  height: 600px;
   touch-action: pan-y;
+  cursor: grab;
 }
 
 .featured_scroll {
@@ -322,8 +316,6 @@
   scroll-padding-inline: 10vh;
   cursor: grab;
   gap: 1rem;
-  width: 100%;
-  height: 100%;
 }
 
 .featured_scroll > * {

@@ -34,9 +34,7 @@ export default async function Home() {
           </div>
         </div>
         <div className={styles.featured_row}>
-          <div className={styles.featured_scroll}>
-            <ArticleCard data={data}></ArticleCard>
-          </div>
+            <FeatureCard data={data}></FeatureCard>
         </div>
       </div>
       </div>

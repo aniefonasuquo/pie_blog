@@ -6,15 +6,17 @@ import Image from "next/image";
 
 export default function FeatureCard ({data}) {
   
-  return (
-   <div className={layout.feature_card_wrap}>
+  return (<div className={layout.featured_scroll}>
+        {
+            data.map(({id, title, tags, body}) => (          
+            <div className={layout.feature_card_wrap} key={id}>
               <div className={layout.article_img_container}>
-                <Link href={`/post/${data.id}`}>
+                <Link href={`/post/${id}`}>
                   <Image alt="image" className={layout.featured_post_img} src={img1} sizes="100vw"></Image>
                 </Link>
                 <div className={layout.article_category_container}>
                   {
-                    data.tags.map(tag => (<div className={layout.article_category} key={tag}>
+                    tags.map(tag => (<div className={layout.article_category} key={tag}>
                        <Category tag={tag}></Category>
                     </div>
                   ))
@@ -23,9 +25,12 @@ export default function FeatureCard ({data}) {
               </div>
               <div className={layout.article_brief_container}>
                 <Link href={`/post/${id}`}>
-                  <h3>{data.title}</h3>
-                   <p>{`${data.body.substring(0, 200)}...`}</p>
+                  <h3>{title}</h3>
+                   <p>{`${body.substring(0, 200)}...`}</p>
                 </Link>
               </div>
-            </div>)
+            </div>))
+          }
+    
+  </div>)
 }
