@@ -303,6 +303,7 @@
 .featured_row {
   position: relative;
   height: 600px;
+  touch-action: pan-y;
 }
 
 .featured_scroll {
@@ -314,7 +315,7 @@
   left: 0;
   gap: 1rem;
   width: 100%;
-  touch-action: pan-x;
+  touch-action: pan-y;
   overflow-x: auto;
   cursor: grab;
 }
