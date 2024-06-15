@@ -499,6 +499,11 @@
   .recomwnded_section
   {
     padding: 0 4vh;
+    margin: 0 auto 3vh;
+   }
+
+   .hero_global_wrap {
+    padding-top: 0;
    }
    
    .featured_scroll {
