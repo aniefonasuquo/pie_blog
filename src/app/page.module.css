@@ -276,7 +276,7 @@
 
 /* featured section */
 .featured_section_wrap {
-  padding-bottom: 2vh;
+  padding: 2vh 0;
 }
 
 .featured_section_top {
@@ -504,6 +504,10 @@
 
    .hero_global_wrap {
     padding-top: 0;
+   }
+
+   .featured_section_top {
+    padding-top: 2vh;
    }
    
    .featured_scroll {
