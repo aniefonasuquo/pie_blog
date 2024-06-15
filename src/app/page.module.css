@@ -17,7 +17,7 @@
 .top_section,
 .footerContent,
 .herowrap,
-.featured_section_top
+.featured_section_top,
 .featured_scroll,
 .loop_section,
 .recomwnded_section
@@ -309,8 +309,7 @@
 .featured_row {
   position: relative;
   height: 600px;
-  padding-left: 10vh;
-  
+  touch-action: pan-y;
 }
 
 .featured_scroll {
@@ -320,8 +319,8 @@
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 10vh;
   cursor: grab;
-  touch-action: pan-y;
   gap: 1rem;
   width: 100%;
   height: 100%;
@@ -389,6 +388,7 @@
   position: absolute;
   bottom: 1em;
   left: 1em;
+  width: 100%;
 }
 
 /* loop section */
@@ -501,12 +501,18 @@
   .headerContainer,
   .footerContent,
   .herowrap,
-  .featured_section_wrap,
+  .featured_section_top,
+  .featured_scroll,
   .loop_section,
   .recomwnded_section
   {
     padding: 0 4vh;
    }
+   
+   .featured_scroll {
+     grid-auto-columns: 43%; 
+   }
+
 
    .category_illustrations_container  {
     display: none;
