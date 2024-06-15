@@ -32,9 +32,11 @@ export default async function Home() {
             <div>Next</div>
           </div>
         </div>
+        <div className={styles.featured_section}>
         <div className={styles.featured_row}>
-        <div className={styles.featured_scroll}>
-          <ArticleCard data={data}></ArticleCard>
+          <div className={styles.featured_scroll}>
+            <ArticleCard data={data}></ArticleCard>
+          </div>
         </div>
       </div>
       </div>

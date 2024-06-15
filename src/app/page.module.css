@@ -300,10 +300,16 @@
   padding-right: 2rem;
 }
 
+.featured_section {
+  cursor: grab;
+}
+
 .featured_row {
   position: relative;
   height: 600px;
   touch-action: pan-y;
+  cursor: grab;
+
 }
 
 .featured_scroll {
@@ -315,9 +321,8 @@
   left: 0;
   gap: 1rem;
   width: 100%;
-  touch-action: pan-y;
+  height: 100%;
   overflow-x: auto;
-  cursor: grab;
 }
 
 .featured_scroll::-webkit-scrollbar {
