@@ -1,4 +1,8 @@
-import layout from './../page.module.css'
+import Link from "next/link";
+import img1 from '../../../public/img1.jpg'
+import layout from '../page.module.css'
+import Category from "./category";
+import Image from "next/image";
 
 export default function FeatureCard ({data}) {
   
