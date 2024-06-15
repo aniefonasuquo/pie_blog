@@ -23,7 +23,6 @@ export default function ArticleCard ({data}) {
                   }
                 </div>              
               </div>
-
               <div className={layout.article_brief_container}>
                 <Link href={`/post/${id}`}>
                   <h3>{title}</h3>

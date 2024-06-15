@@ -7,6 +7,7 @@ import Recommended from "./components/recommended";
 import Category from "./components/category";
 import { getFirstSixPosts } from "./functions/functions";
 import ArticleCard from "./components/articlecard";
+import FeatureCard from "./components/featurecards";
 
 export default async function Home() {
 
@@ -32,13 +33,11 @@ export default async function Home() {
             <div>Next</div>
           </div>
         </div>
-        <div className={styles.featured_section}>
         <div className={styles.featured_row}>
           <div className={styles.featured_scroll}>
             <ArticleCard data={data}></ArticleCard>
           </div>
         </div>
-      </div>
       </div>
       </div>
       <div className={styles.loop_global_wrap}>
