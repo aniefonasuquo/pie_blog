@@ -28,16 +28,14 @@ export default function RootLayout({ children }) {
             <footer>
               <div className={styles.footerContent}>
                 <div className={styles.footersubscribe}>
-                  <h2>Subscribe to New Post</h2>
+                  <h1>Subscribe to New Post</h1>
                   <div>
-                    <div>
                       <form>
                         <input type="email" placeholder="Your Email Address"></input>
                         <button type="submit">Subscribe</button>
-                      </form>
+                        </form>
                     </div>
                   </div>
-                </div>
                 <div className={styles.footerbuttom}>
                   <div className={styles.footerbuttom_top}>
                     <div className={styles.footerbuttom_logo_container}>

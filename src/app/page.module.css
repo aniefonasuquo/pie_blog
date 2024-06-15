@@ -307,7 +307,7 @@
 
 .featured_scroll {
   display: flex;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   bottom: 0;
   right: 0;
@@ -315,7 +315,12 @@
   gap: 1rem;
   width: 100%;
   touch-action: pan-x;
+  overflow-x: auto;
   cursor: grab;
+}
+
+.featured_scroll::-webkit-scrollbar {
+  width: 0;
 }
 
 .article_card_wrap {

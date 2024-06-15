@@ -1,0 +1,8 @@
+
+.wrapdiv {
+  display: flex;
+  overflow-x: scroll;
+
+  /* flex max-w-xl space-x-3 overflow-x-scroll scrollbar-hide */
+
+}

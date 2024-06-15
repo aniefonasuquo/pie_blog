@@ -119,19 +119,6 @@ header, footer {
   color: bisque;
 }
 
-header {
-  position: relative;
-}
-
-main {
-}
-
-footer {
-  padding-bottom: 3vh;
-}
-
-
-
 h1 {
   font-size: var(--hero_heading_size);
 }
@@ -148,6 +135,22 @@ a {
 li {
   list-style: none;
 }
+
+header {
+  position: relative;
+}
+
+main {
+}
+
+footer {
+  padding-bottom: 3vh;
+}
+
+footer h1 {
+  font-size: 4rem;
+}
+
 
 button {
   color: rgb(52,54,95);
