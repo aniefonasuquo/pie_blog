@@ -101,7 +101,7 @@
 }
 
 .headerDiv2 ul li{
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   margin: 1em;
 }
 
@@ -125,7 +125,7 @@
 
 .smallnav {
   padding-top: 1em;
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 
 /* footer */
@@ -146,7 +146,7 @@
 }
 
 .footersubscribe h2{
-  font-size: 2rem;
+  /* font-size: 2rem; */
   padding-bottom: 1em;
   margin: 5vh auto 0 0;
   flex: 1 0 50%;
@@ -165,7 +165,7 @@
 }
 
 .footersubscribe form input{
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   padding: 0.5em 0.75em;
   border-style: none;
   background-color: transparent;
@@ -190,7 +190,7 @@
 .footerbuttom_top {
   border-top: 1px whitesmoke solid;
   display: flex;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   margin-top: 1em;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -250,7 +250,8 @@
 
 .herotextwrap {
   max-width: 1340px;
-  padding: 3vh 0 6vh;
+  padding: 1rem 0;
+  font-size: 6rem;
 }
 
 .hero_subscribe_wrap {
@@ -264,6 +265,10 @@
 
 .hero_subscribe_wrap button {
   margin-right: 5vh;
+  padding: 0.9em 1.5em;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 3rem;
 }
 
 .hero_subscribe_text {
@@ -332,7 +337,7 @@
 }
 
 .article_category {
-  font-size: 80%;
+  /* font-size: 80%; */
   background-color: rgba(255, 192, 187, 0.09);
   border: none;
   color: rgba(255, 192, 187, 1);
@@ -390,7 +395,7 @@
 .pagination_section button {
   background-color: rgba(52, 54, 94, 1);
   color:  rgba(255, 192, 187, 1);
-  padding: 1.5rem 3rem;
+  padding: 1em 1.5em;
   font-size: 1.5rem;
   border-radius: 5rem;
 }
@@ -438,8 +443,11 @@
     padding-top: 2vh;
    }
 
-}
+   .herotextwrap {
+      font-size: 4rem;
+   }
 
+}
 
 @media (max-width: 768px) {
 
@@ -451,6 +459,11 @@
   .menubutton {
     visibility: visible;
     display:block;
+  }
+
+  .hero_subscribe_wrap button {
+    font-size: 1em;
+    padding: 0.5em 1.4em;
   }
 
   .mobilemenu {
@@ -465,7 +478,7 @@
 
   .mobileNav {
     padding: 4vh 0 2vh;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 
   .join_small_link {
@@ -491,14 +504,6 @@
     max-width: 60px;
   }
   
-
-  .herotextwrap {
-    color: bisq;
-    padding: 2vh 0;
-
-
-  }
-
   .headerContainer,
   .footerContent,
   .herowrap,
@@ -510,9 +515,14 @@
     padding: 0 4vh;
     margin: 0 auto 3vh;
    }
+
    .hero_global_wrap {
     padding-top: 0;
    }
+
+   .herotextwrap {
+    font-size: 2.5rem;
+  }
 
    .hero_subscribe_wrap {
     padding-bottom: 6vh;
@@ -533,6 +543,14 @@
     visibility: hidden;
    }
 
+   .pagination_section {
+    padding: 8vh 0;
+   }
+
+   .pagination_section button {
+    font-size: 1rem;
+   }
+
 
   .recommended_section_row {
     grid-template-columns: repeat(4, 1fr);
@@ -551,11 +569,11 @@
   }
 
   .footersubscribe form input{
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
 
   .footerbuttom_logo_container {
-    font-size: 6vw;
+    /* font-size: 6vw; */
   }
 
   .loop_section_top {

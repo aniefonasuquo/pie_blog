@@ -17,7 +17,7 @@ export default async function Home() {
     <div className={styles.main}>
       <div className={styles.hero_global_wrap}>
         <div className={styles.herowrap}>
-          <h1 className={styles.herotextwrap}>Make The <span>Best</span> Investment Decisions For You</h1>
+          <h1 className={styles.herotextwrap}>Make The Best Investment Decisions For You</h1>
           <div className={styles.hero_subscribe_wrap}>
             <div><Link href='/'><button>Become a subscriber</button></Link></div>
             <div className={styles.hero_subscribe_text}><span>Get the email newsletter and unlock access to members-only content and updates</span></div>
@@ -25,7 +25,7 @@ export default async function Home() {
         </div>
         <div className={styles.featured_section_wrap}>
         <div className={styles.featured_section_top}>
-          <h3>Get started with our best articles</h3>
+          <h2>Get started with our best articles</h2>
           <div className={styles.feature_scroll}>
             <div>Prev</div>
             <div>Next</div>
