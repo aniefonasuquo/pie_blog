@@ -25,7 +25,7 @@ export default async function Home() {
         </div>
         <div className={styles.featured_section_wrap}>
         <div className={styles.featured_section_top}>
-          <h2 style={styles.LandingSectionHeading}>Get started with our best articles</h2>
+          <h2 className={styles.LandingSectionHeading}>Get started with our best articles</h2>
           <div className={styles.feature_scroll}>
             <div>Prev</div>
             <div>Next</div>

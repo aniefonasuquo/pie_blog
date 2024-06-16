@@ -43,7 +43,7 @@ export default function Header () {
         {mobileNav == 0 && 
         <div onClick={changeNav} className={layout.menubutton}>
         <svg width="40px" height="40px" viewBox="0 0 24 24" fill="#ffe4c4" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4 17H20M4 12H20M4 7H20" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M4 17H20M4 12H20M4 7H20" stroke="#000000" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
           <g id="SVGRepo_iconCarrier"> <path d="M4 17H20M4 12H20M4 7H20" stroke="#ffe4c4" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/> </g>
           </svg>
           </div>

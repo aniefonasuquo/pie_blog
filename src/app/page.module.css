@@ -598,6 +598,20 @@
   .footersubscribe > * {
     padding-bottom: 1em;
   }
+
+  .LandingArticleHeading {
+    font-size: 2rem;
+  }
+  
+  .LandingSectionHeading {
+    font-size: 1.5rem;
+  }
+
+  .feature_scroll {
+    visibility: hidden;
+    display: none;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -605,10 +619,6 @@
     padding-top: 2vh;
   }
 
-  .feature_scroll {
-    visibility: hidden;
-    display: none;
-  }
 
   .footersubscribe form input{
     /* font-size: 1.2rem; */
@@ -653,7 +663,7 @@
   .footersubscribe form input,
   .footersubscribe form button
   {
-  font-size: 13px;
+  font-size: 14px;
   }
 
 }
