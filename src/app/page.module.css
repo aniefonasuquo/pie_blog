@@ -1,4 +1,6 @@
 
+
+
 .globalcontent {
   display: flex;
   flex-direction: column;
@@ -138,44 +140,51 @@
 
 .footersubscribe {
   display: flex;
-  padding-bottom: 1em;
-  flex-wrap: wrap;
+  padding: 4em 0 3em;
   align-items: center;
-  margin: 5vh 0;
-  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.footersubscribe h2{
-  /* font-size: 2rem; */
-  padding-bottom: 1em;
-  margin: 5vh auto 0 0;
-  flex: 1 0 50%;
-  max-width: 1100px;
+.footersubscribe > *{
+  padding-bottom: 0.5em;
+}
+
+.footersubscribe h1{
+  font-size: 3rem;
+  margin-right: 10vw
 }
 
 .footersubscribe > div{
-  padding-bottom: 1em;
-  margin: 5vh auto 0 0;
+  flex: 0 1 auto;
 }
 
 .footersubscribe form {
   background-color: rgb(43, 45, 49);
-  border-radius: 2rem;
-  display: flex;
+  border-radius: 4rem;
+  max-width: 550px;
+  /* width: 100%; */
+
+  /* position: relative; */
 }
 
 .footersubscribe form input{
-  /* font-size: 1.5rem; */
-  padding: 0.5em 0.75em;
+  padding: 1rem 0;
+  padding-left: 1.5rem;
   border-style: none;
+  color: rgba(212, 162, 101, 0.5);
   background-color: transparent;
-  color: rgba(255, 192, 187, 0.12);
-  width: 100%;
-  max-width: 250px;
 }
 
 .footersubscribe form button{
+  padding: 1rem 2rem;
+  font-weight: bold;
+}
 
+.footersubscribe form input,
+.footersubscribe form button
+ {
+  font-size: 1.5rem;
 }
 
 .footerbuttom_logo {
@@ -190,7 +199,6 @@
 .footerbuttom_top {
   border-top: 1px whitesmoke solid;
   display: flex;
-  /* font-size: 1.5rem; */
   margin-top: 1em;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -240,7 +248,7 @@
 
 
 .hero_global_wrap {
-  color: bisque;
+  color: rgb(255, 228, 196);
   background-color: rgb(52,54,95);
   padding-top: 2vh;
 }
@@ -425,6 +433,14 @@
   width: 100%;
 }
 
+.LandingArticleHeading {
+  font-size: 1.2rem;
+}
+
+.LandingSectionHeading {
+  font-size: 1.5rem;
+}
+
 @media (max-width: 1480px) {
   .herotextwrap {
     /* margin-bottom: 4vh; */
@@ -435,6 +451,8 @@
   .herotextwrap {
     
   }
+
+
   
   
 }
@@ -446,6 +464,23 @@
    .herotextwrap {
       font-size: 4rem;
    }
+
+
+  .footersubscribe form button {
+    
+  }
+
+  .footersubscribe form input,
+  .footersubscribe form button
+  {
+    font-size: 1.2rem;
+  }
+
+
+
+  
+
+
 
 }
 
@@ -528,6 +563,10 @@
     padding-bottom: 6vh;
    }
 
+   .footersubscribe h1{
+    font-size: 3rem;
+    /* margin-right: 0 */
+  }
 
    .featured_section_top {
     /* padding: 2vh 4vh; */
@@ -555,7 +594,10 @@
   .recommended_section_row {
     grid-template-columns: repeat(4, 1fr);
   }
-  
+
+  .footersubscribe > * {
+    padding-bottom: 1em;
+  }
 }
 
 @media (max-width: 480px) {
@@ -571,13 +613,13 @@
   .footersubscribe form input{
     /* font-size: 1.2rem; */
   }
-
+  
   .footerbuttom_logo_container {
     /* font-size: 6vw; */
   }
 
   .loop_section_top {
-
+    
   }
 
   .article_img_container img {
@@ -587,5 +629,31 @@
   .recommended_section_row {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .footersubscribe form input,
+  .footersubscribe form button
+  {
+  font-size: 14px;
+  }
+
+  .footersubscribe form button {
+    padding: 1rem;
+  }
+
+  .footersubscribe h1{
+    font-size: 2rem;
+    margin-right: 10vw
+  }
+
   
+}
+
+@media (max-width: 350px) {
+
+  .footersubscribe form input,
+  .footersubscribe form button
+  {
+  font-size: 13px;
+  }
+
 }

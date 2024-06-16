@@ -25,7 +25,7 @@ export default function FeatureCard ({data}) {
               </div>
               <div className={layout.article_brief_container}>
                 <Link href={`/post/${id}`}>
-                  <h3>{title}</h3>
+                  <h3 className={layout.LandingArticleHeading}>{title}</h3>
                    <p>{`${body.substring(0, 200)}...`}</p>
                 </Link>
               </div>

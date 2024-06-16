@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
             <footer>
               <div className={styles.footerContent}>
                 <div className={styles.footersubscribe}>
-                  <h1>Subscribe to New Post</h1>
+                  <h1>Subscribe to New Posts.</h1>
                   <div>
                       <form>
                         <input type="email" placeholder="Your Email Address"></input>
