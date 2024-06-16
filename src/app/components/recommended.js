@@ -5,10 +5,9 @@ import img1 from '../../../public/img1.jpg'
 
 export default function Recommended () {
   return (<>
-    <div className={layout.recomwnded_section}>
-      <div>
-        <h3>Recommended</h3></div>
-      <div className={layout.recomwnded_section_row}>
+    <div className={layout.recommended_section}>
+      <h3>Recommended</h3>
+      <div className={layout.recommended_section_row}>
         <div className={layout.recom_article_card_wrap}>
           <div className={layout.article_img_container}>
               <Image alt="image" className={layout.featured_post_img} src={img1} sizes="100vw"></Image>
