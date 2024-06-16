@@ -115,6 +115,7 @@
 .mobilemenu {
   display: none;
   position: fixed;
+  height: 100vh;
   top: 0;
   left: 0;
   right: 0;
@@ -600,7 +601,7 @@
   }
 
   .LandingArticleHeading {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   
   .LandingSectionHeading {
