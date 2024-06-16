@@ -491,17 +491,17 @@
     display: none;
     visibility: hidden;
   }
-
+  
   .menubutton {
     visibility: visible;
     display:block;
   }
-
+  
   .hero_subscribe_wrap button {
     font-size: 1em;
     padding: 0.5em 1.4em;
   }
-
+  
   .mobilemenu {
     display: flex;
     flex-direction: column;
@@ -509,11 +509,13 @@
     width: 100%;
     background-color: rgba(52, 54, 94, 1);
     padding: 4vh;
-
+    
   }
-
+  
   .mobileNav {
+    /* text-align: center; */
     padding: 4vh 0 2vh;
+    font-size: 3rem;
     /* font-size: 1.5rem; */
   }
 

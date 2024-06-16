@@ -10,7 +10,6 @@
   padding: 5vh 10vh;
   display: flex;
   column-gap: 5rem;
-
   justify-content: space-between;
 }
 
@@ -18,6 +17,7 @@
 }
 
 .top_section_left h1{
+  font-size: 4rem;
 
 }
 
@@ -30,14 +30,13 @@
 }
 
 .top_section_right {
+  max-width: 400px;
+  min-width: 300px;
 
 }
 
 .top_img_container {
-  overflow: hidden;
   width: 100%;
-  max-width: 700px;
-  min-width: 300px;
 }
 
 .top_img_container img {
@@ -57,6 +56,13 @@
   font-size: 1.2rem;
 }
 
+@media (max-width: 1024px) {
+  .top_section_left h1{
+    font-size: 2.5rem;
+  
+  }
+}
+
 @media (max-width: 768px) {
 
   .post,
@@ -69,9 +75,11 @@
     display: block;
   }
 
-  .top_img_container {
-    max-width: none;
-    min-width: none;
+  .top_section_right {
+   width: 100%;
+   max-width: unset;
+   min-width: unset;
+  
   }
   
 

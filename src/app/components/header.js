@@ -5,12 +5,16 @@ import layout from '@/app/page.module.css'
 import logo from "@/../public/brand-logo.png"
 import Image from "next/image"
 import Navlinks from "./navlinks"
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 
 export default function Header () {
 
   const [mobileNav, setNav] = useState(0)
-  const [catMenu, showCatMenu] = useState(0)
+  const categorymenu = useRef(0)
+
+  useEffect((e) => {
+    categorymenu.current = 0
+  }, [mobileNav])
 
   function changeNav () {
 
@@ -22,12 +26,9 @@ export default function Header () {
   }
 
   function catMenuNav () {
-
-    if (catMenu == 1) {
-      showCatMenu(0)
-    } else {
-      showCatMenu(1)
-    }
+    console.log(categorymenu.current)
+    categorymenu.current = 1
+    console.log(categorymenu.current)
   }
 
 
@@ -43,8 +44,8 @@ export default function Header () {
         {mobileNav == 0 && 
         <div onClick={changeNav} className={layout.menubutton}>
         <svg width="40px" height="40px" viewBox="0 0 24 24" fill="#ffe4c4" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4 17H20M4 12H20M4 7H20" stroke="#000000" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
-          <g id="SVGRepo_iconCarrier"> <path d="M4 17H20M4 12H20M4 7H20" stroke="#ffe4c4" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/> </g>
+          <path d="M4 17H20M4 12H20M4 7H20" stroke="#000000" stroke-width="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          <g id="SVGRepo_iconCarrier"> <path d="M4 17H20M4 12H20M4 7H20" stroke="#ffe4c4" stroke-width="1.5" strokeLinecap="round" strokeLinejoin="round"/> </g>
           </svg>
           </div>
         }
@@ -53,12 +54,21 @@ export default function Header () {
         <div onClick={changeNav} className={layout.mobilemenu}>
         <div className={layout.closebutton}>        
         <svg width="40px" height="40px" viewBox="0 0 24 24" fill="#ffe4c4" xmlns="http://www.w3.org/2000/svg">
-        <g id="Menu / Close_MD"><path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#ffe4c4" stroke-width="2" stroke-linecap="round" strokeLinejoin="round"/></g>
+        <g id="Menu / Close_MD"><path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#ffe4c4" stroke-width="2" strokeLinecap="round" strokeLinejoin="round"/></g>
           </svg>
           </div>
             <div className={layout.mobileNav}>
               <ul>
                 <li onClick={catMenuNav}>Categories</li>
+                <li ref={categorymenu}>
+                  <ul>
+                    <li>Planning</li>
+                    <li>Retirement</li>
+                    <li>Lifestyle</li>
+                    <li>Trading</li>
+                    <li>DIY Wealth</li>
+                  </ul>
+                  </li>
                 <li><Link href='/'>Opportunities</Link></li>
                 <li>
                   <div>

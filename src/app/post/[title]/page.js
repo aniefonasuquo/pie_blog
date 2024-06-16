@@ -10,6 +10,9 @@ export default async function Post ({params}) {
 
   const post = await getSinglePost(params.title)
 
+  const wordcount = post.body.split()
+  console.log(typeof(wordcount))
+
   return (
   <div className=''>
     <div className={styles.top_section}>
