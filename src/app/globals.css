@@ -140,6 +140,10 @@ footer h1 {
   font-size: 2rem;
 }
 
+input:focus {
+  outline: none;
+}
+
 
 button {
   color: rgb(52,54,95);
@@ -156,7 +160,7 @@ button {
 
 @media (max-width: 768px) {
 
-  * {
+  body {
     font-size: 14px;
   }
 

@@ -6,6 +6,7 @@ import logo from "../../public/brand-logo.png"
 import Image from "next/image";
 import localFont from 'next/font/local'
 import Header from "./components/header";
+import FooterSubmit from "./components/footersubmit";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -29,12 +30,7 @@ export default function RootLayout({ children }) {
               <div className={styles.footerContent}>
                 <div className={styles.footersubscribe}>
                   <h1>Subscribe to New Posts.</h1>
-                  <div>
-                      <form>
-                        <input type="email" placeholder="Your Email Address"></input>
-                        <button type="submit">Subscribe</button>
-                        </form>
-                    </div>
+                  <FooterSubmit></FooterSubmit>
                   </div>
                 <div className={styles.footerbuttom}>
                   <div className={styles.footerbuttom_top}>
