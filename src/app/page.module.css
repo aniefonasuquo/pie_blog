@@ -493,7 +493,7 @@ Fpop
    }
 
    .herotextwrap {
-      font-size: 4rem;
+      font-size: 2rem;
    }
 
 
@@ -600,7 +600,7 @@ Fpop
    }
 
    .herotextwrap {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
    .hero_subscribe_wrap {
@@ -661,6 +661,7 @@ Fpop
 @media (max-width: 480px) {
   .herotextwrap {
     padding-top: 2vh;
+    font-size: 1.5rem;
   }
 
 

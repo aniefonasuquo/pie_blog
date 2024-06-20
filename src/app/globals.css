@@ -160,9 +160,7 @@ button {
 
 @media (max-width: 768px) {
 
-  body {
-    font-size: 14px;
-  }
+
 
   header {
     position: relative;
@@ -172,5 +170,8 @@ button {
 
 @media (max-width: 480px) {
 
+  html {
+    font-size: 14px;
+  }
 }
 
