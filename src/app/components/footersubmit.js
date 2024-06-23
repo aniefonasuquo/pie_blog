@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { useForm } from "react-hook-form"
+import layout from './../page.module.css'
 
 export default function FooterSubmit () {
 
@@ -13,22 +14,20 @@ export default function FooterSubmit () {
     setresponse(0)
     const res = await fetch(`/subscription/?email=${e.email}`, { cache: 'no-store'} )
 
-    console.log(e)
-
     if (res.status == 200) {
-      setresponse("Success! Please check your email to confirm subscription")
+      setresponse(1)
     } else {
-      setresponse("Something went wrong")
+      setresponse(2)
     }
   }
   
   return (
-      <div>
+      <div className={layout.submitwrapper}>
       <form onSubmit={handleSubmit(submit)}>
         <input {...register('email')} type="email" placeholder="Your Email Address"></input>
-        <button type="submit">Subscribe</button>
+        <button type="submit">{subresponse != 1? "Subscribe" : "Success!!"}</button>
         </form>
-      {subresponse != 0 &&<div>{subresponse}</div>}  
+        <div>{subresponse == 2 && <span>oops! Something went wrong</span>}</div>
       </div>
 
   )

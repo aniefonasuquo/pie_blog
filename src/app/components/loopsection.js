@@ -7,13 +7,13 @@ import layout from '../page.module.css'
 
 export default function LoopSection ({data}) {
   
-  const [limit, setLimit] = useState(6)
+  const [limit, setLimit] = useState(8)
 
   function changeLimit (e) {
 
     e.preventDefault()
 
-    setLimit(limit => limit + 6)
+    setLimit(limit => limit + 4)
   }
   
   let post = data.slice(0, limit)

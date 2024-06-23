@@ -3,16 +3,18 @@ import img1 from '../../../public/img1.jpg'
 import layout from '../page.module.css'
 import Category from "./category";
 import Image from "next/image";
+import { Suspense } from "react";
 
 export default function FeatureCard ({data}) {
-  
-  return (<div className={layout.featured_scroll}>
+
+  return (
+  <div className={layout.featured_scroll}>
         {
-            data.map(({id, title, tags, body}) => (          
-            <div className={layout.feature_card_wrap} key={id}>
+            data.map(({_id, title, tags, content, featured_image, image_link, excerpt}) => (          
+            <div className={layout.feature_card_wrap} key={_id}>
               <div className={layout.article_img_container}>
-                <Link href={`/post/${id}`}>
-                  <Image alt="image" className={layout.featured_post_img} src={img1} sizes="100vw"></Image>
+                <Link href={`/post/${_id}`}>
+                    <Image alt="image" className={layout.featured_post_img} src={image_link} height={`${featured_image.height}`} width={`${featured_image.width}`} sizes="100vw"></Image>
                 </Link>
                 <div className={layout.article_category_container}>
                   {
@@ -21,16 +23,14 @@ export default function FeatureCard ({data}) {
                     </div>
                   ))
                   }
-                </div>              
+                </div>
               </div>
               <div className={layout.article_brief_container}>
-                <Link href={`/post/${id}`}>
+                <Link href={`/post/${_id}`}>
                   <h3 className={layout.LandingArticleHeading}>{title}</h3>
-                   <p>{`${body.substring(0, 200)}...`}</p>
+                   <p>{`${excerpt.substring(0, 200)}...`}</p>
                 </Link>
               </div>
-            </div>))
-          }
-    
+            </div>))} 
   </div>)
 }

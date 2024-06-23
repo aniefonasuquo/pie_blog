@@ -10,8 +10,7 @@ export default async function Post ({params}) {
 
   const post = await getSinglePost(params.title)
 
-  const wordcount = post.body.split()
-  console.log(typeof(wordcount))
+  const wordcount = 5
 
   return (
   <div className=''>
@@ -19,7 +18,7 @@ export default async function Post ({params}) {
       <div className={styles.top_section_left}>
         <div className={styles.category_container}>
           {post.tags.map((tag) => (
-          <div className={layout.article_category} key={tag}>
+          <div className={layout.post_category} key={tag}>
               <Category tag={tag}></Category>
             </div>
             ))}
@@ -35,18 +34,18 @@ export default async function Post ({params}) {
           </div>
         <div>
           <span>5 Mins Read</span>
-          <span>21 November 2024</span>
+          <span>{post.published}</span>
           </div>
         <div>Share</div>
         </div>
       <div className={styles.top_section_right}>
         <div className={styles.top_img_container}>
-          <Image alt='image' src={img1} sizes='100vw' priority></Image>
+          <Image alt='image' src={post.image_link} height={post.featured_image.height} width={post.featured_image.width} sizes='100vw' priority></Image>
           </div>
         </div>
       </div>
     <div className={styles.post}>
-          {post.body}
+          {post.content}
       </div>
     {/* <div>Comment</div> */}
     <Recommended></Recommended>

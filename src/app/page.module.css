@@ -59,14 +59,16 @@
   font-weight: bold;
 }
 
-.search_button span{
-  padding: 0 0.5em;
-}
+
 
 .search_button {
   background-color: rgba(255, 192, 187, 0.09);;
   border-radius: 2rem;
   padding: 0.6em 1.2em;
+}
+
+.search_button span{
+  padding: 0 0.5em;
 }
 
 .search_button:hover {
@@ -156,7 +158,8 @@
   max-width: 80%;
   border: none;
   color: bisque;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-weight: lighter;
 }
 
 /* footer */
@@ -189,10 +192,10 @@
 .footersubscribe form {
   background-color: rgb(43, 45, 49);
   border-radius: 4rem;
-  max-width: 550px;
-  /* width: 100%; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 
-  /* position: relative; */
 }
 
 .footersubscribe form input{
@@ -210,8 +213,12 @@
 
 .footersubscribe form input,
 .footersubscribe form button
- {
+{
   font-size: 1.5rem;
+}
+
+.submitwrapper {
+  max-width: 500px;
 }
 
 .footerbuttom_logo {
@@ -371,15 +378,35 @@
   flex: 0 0 370px;
 }
 
+.article_category_container {
+  display: flex;
+  padding-bottom: 0.5rem;
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  width: 100%;
+}
+
 .article_category {
-  /* font-size: 80%; */
-  background-color: rgba(255, 192, 187, 0.09);
+  font-size: 0.8rem;
   border: none;
-  color: rgba(255, 192, 187, 1);
+  color: rgba(52, 54, 94, 1);
+  background-color:  rgba(52, 54, 94, 0.2);
   border-radius: 2rem;
-  padding: 0.5em;
+  padding: 0.5em 0.8em;
   margin-right: 0.5em;
 }
+
+.post_category {
+  font-size: 1rem;
+  border: 1px solid bisque;
+  color: bisque;
+  /* background-color:  rgba(52, 54, 94, 0.2); */
+  border-radius: 2rem;
+  padding: 0.5em 0.8em;
+  margin-right: 0.5em;
+}
+
 
 .feature_card_wrap div, 
 .feature_card_wrap h3,
@@ -411,14 +438,7 @@
   object-fit: fill;
 }
 
-.article_category_container {
-  display: flex;
-  padding-bottom: 0.5rem;
-  position: absolute;
-  bottom: 1em;
-  left: 1em;
-  width: 100%;
-}
+
 
 /* loop section */
 
@@ -656,12 +676,16 @@ Fpop
     display: none;
   }
 
+  .searchinput {
+    font-size: 1.5rem;
+  }
+
 }
 
 @media (max-width: 480px) {
   .herotextwrap {
     padding-top: 2vh;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
 

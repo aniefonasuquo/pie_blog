@@ -8,6 +8,8 @@ import Category from "./components/category";
 import { getFirstSixPosts } from "./functions/functions";
 import ArticleCard from "./components/articlecard";
 import FeatureCard from "./components/featurecards";
+import { Suspense } from "react";
+import { LayoutRouter } from "next/dist/server/app-render/entry-base";
 
 export default async function Home() {
 
