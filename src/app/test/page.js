@@ -1,4 +1,4 @@
-import Sharing from "../components/share";
+import Sharing from "../(blog)/components/share";
 
 
 export default function Testpage () {

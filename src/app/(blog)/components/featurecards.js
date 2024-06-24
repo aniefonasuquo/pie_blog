@@ -1,5 +1,5 @@
 import Link from "next/link";
-import img1 from '../../../public/img1.jpg'
+import img1 from '../../../../public/img1.jpg'
 import layout from '../page.module.css'
 import Category from "./category";
 import Image from "next/image";
@@ -12,7 +12,7 @@ export default function FeatureCard ({data}) {
         {
             data.map(({_id, title, tags, content, featured_image, image_link, excerpt}) => (          
             <div className={layout.feature_card_wrap} key={_id}>
-              <div className={layout.article_img_container}>
+              <div className={layout.featured_img_container}>
                 <Link href={`/post/${_id}`}>
                     <Image alt="image" className={layout.featured_post_img} src={image_link} height={`${featured_image.height}`} width={`${featured_image.width}`} sizes="100vw"></Image>
                 </Link>

@@ -431,12 +431,27 @@
 
 .article_img_container img {
   
+  /* border: solid 1px bisque; */
   border-radius: 1rem;
-  border: 1px solid rgba(255, 192, 187, 0.12);
+  border: solid 1px rgba(52, 54, 94, 0.2);
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
+
+.featured_img_container {
+  width: 100%;
+  position: relative;
+}
+
+.featured_img_container img {
+  border-radius: 1rem;
+  border: solid 1px bisque;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
 
 
 
@@ -483,7 +498,7 @@
 .LandingArticleHeading {
   font-size: 1.2rem;
 }
-Fpop
+
 .LandingSectionHeading {
   font-size: 1.5rem;
 }
@@ -513,7 +528,7 @@ Fpop
    }
 
    .herotextwrap {
-      font-size: 2rem;
+      font-size: 3rem;
    }
 
 
@@ -547,7 +562,7 @@ Fpop
   }
   
   .hero_subscribe_wrap button {
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 0.5em 1.4em;
   }
   

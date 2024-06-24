@@ -1,5 +1,5 @@
 import Link from "next/link"
-import layout from '@/app/page.module.css'
+import layout from './../page.module.css'
 
 export default function Navlinks () {
 

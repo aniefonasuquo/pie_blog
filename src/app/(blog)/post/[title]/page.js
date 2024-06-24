@@ -1,11 +1,11 @@
 import styles from './page.module.css'
 import Image from 'next/image'
 import img1 from '@/../public/img1.jpg'
-import Recommended from '@/app/components/recommended'
-import Category from '@/app/components/category'
-import { getSinglePost } from '@/app/functions/functions'
-import layout from '@/app/page.module.css'
-import Sharing from '@/app/components/share'
+import Recommended from '../../components/recommended'
+import Category from '../../components/category'
+import { getSinglePost } from '../../functions/functions'
+import layout from './../../page.module.css'
+import Sharing from '../../components/share'
 
 export default async function Post ({params}) {
 

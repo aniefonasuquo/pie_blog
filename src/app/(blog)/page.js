@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
-import img1 from '../../public/img1.jpg'
+import img1 from './../../../public/img1.jpg'
 import Loop from "./components/loop";
 import Recommended from "./components/recommended";
 import Category from "./components/category";
@@ -16,7 +16,7 @@ export default async function Home() {
   const data = await getFirstSixPosts()
 
   return (
-    <div className={styles.main}>
+    <div  className={styles.main}>
       <div className={styles.hero_global_wrap}>
         <div className={styles.herowrap}>
           <h1 className={styles.herotextwrap}>Make The Best Investment Decisions For You</h1>

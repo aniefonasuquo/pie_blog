@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./loop.module.css";
 import Link from "next/link";
-import img1 from '../../../public/img1.jpg'
+import img1 from '../../../../public/img1.jpg'
 import layout from './../page.module.css'
 import { getLimitedPosts } from "../functions/functions";
 import ArticleCard from "./articlecard";

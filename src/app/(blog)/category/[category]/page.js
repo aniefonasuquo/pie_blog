@@ -1,10 +1,10 @@
 import styles from './page.module.css'
 import layout from './../../page.module.css'
-import Loop from '@/app/components/loop'
+import Loop from '@/app/(blog)/components/loop'
 import Image from 'next/image'
-import ArticleCard from '@/app/components/articlecard'
-import { getCategoryPosts } from '@/app/functions/functions'
-import LoopSection from '@/app/components/loopsection'
+import ArticleCard from '../../components/articlecard'
+import { getCategoryPosts } from '../../functions/functions'
+import LoopSection from '../../components/loopsection'
 
 
 export default async function Category ({params}) {
