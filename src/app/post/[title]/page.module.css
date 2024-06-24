@@ -56,6 +56,11 @@
   font-size: 1.2rem;
 }
 
+.share {
+  display: flex;
+  gap: 0.5rem;
+}
+
 @media (max-width: 1024px) {
   .top_section_left h1{
     font-size: 2.5rem;

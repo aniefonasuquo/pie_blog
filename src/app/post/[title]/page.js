@@ -5,12 +5,14 @@ import Recommended from '@/app/components/recommended'
 import Category from '@/app/components/category'
 import { getSinglePost } from '@/app/functions/functions'
 import layout from '@/app/page.module.css'
+import Sharing from '@/app/components/share'
 
 export default async function Post ({params}) {
 
   const post = await getSinglePost(params.title)
 
   const wordcount = 5
+  const published = new Date(post.published)
 
   return (
   <div className=''>
@@ -33,10 +35,9 @@ export default async function Post ({params}) {
             </ul>
           </div>
         <div>
-          <span>5 Mins Read</span>
-          <span>{post.published}</span>
+          <span>5 Mins Read . {published.toDateString()}</span>
           </div>
-        <div>Share</div>
+        <div className={styles.share}><Sharing url={`https://pie-blog.vercel.app/post${post._id}`} title={post.title}></Sharing></div>
         </div>
       <div className={styles.top_section_right}>
         <div className={styles.top_img_container}>
