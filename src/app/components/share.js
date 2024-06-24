@@ -16,7 +16,7 @@ import {
   LinkedinShareButton,
   LinkedinIcon,
   WhatsappShareButton,
-  WhatsappIcon} from "next-share";
+  WhatsappIcon} from "@/../../node_modules/next-share/dist/next-share";
 
   export default function Sharing ({url, title}) {
     return (<>
