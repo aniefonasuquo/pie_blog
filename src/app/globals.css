@@ -125,7 +125,11 @@ li {
 }
 
 header {
-  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 
 main {
@@ -145,11 +149,12 @@ input:focus {
 
 
 button {
-  color: rgb(52,54,95);
+  color: #34365f;
   border-style: none;
-  background-color: rgba(255, 192, 187, 1);
+  background-color: #ffc0bb;
   border-radius: 2rem;
   padding: 0.6em 1.2em;
+  cursor: grab;
 }
 
 @media (max-width: 1024px) {

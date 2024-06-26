@@ -69,6 +69,12 @@
   border: none;
   width: 100%;
   max-width: 410px;
+  background-color: rgb(71, 74, 129);
+  color: bisque;
+}
+
+.right input::placeholder {
+  color: bisque;
 }
 
 .right button {
@@ -76,6 +82,7 @@
   font-size: 1.5rem;
   border-radius: 100px;
   margin-top: 2vh;
+  font-weight: bold;
 }
 
 @media (max-width: 1024px) {

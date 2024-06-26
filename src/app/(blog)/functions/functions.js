@@ -76,6 +76,20 @@ export async function getCategoryPosts (category) {
 
   return data
 }
+export async function getRecommededPosts () {
+
+  const posts = await fetch("https://data.usepie.ng/api/content/items/articles?limit=6&filter=%7B%22recommended%22%3A%22true%22%7D", {cache: 'no-cache', headers: {"api-key": "USR-7e23ab2ad21072fd09644b3cc3a0ca90d2ce6cd1"}}).then(res => res.json())
+  let data = []
+  
+  for  (let i = 0; i <= posts.length - 1; i++) {
+    const item = posts[i]
+    const link = await getImageUrl(item.featured_image._id, item.featured_image.height, item.featured_image.width)
+    item["image_link"] = link
+    data.push(item)
+  }
+
+  return data
+}
 
 export async function getSinglePost (id) {
 

@@ -6,11 +6,13 @@ import logo from "@/../public/brand-logo.png"
 import Image from "next/image"
 import Navlinks from "./navlinks"
 import { useState, useRef, useEffect } from "react"
+import Categorymeny from "./categorymenu"
 
 export default function Header () {
 
   const [mobileNav, setNav] = useState(0)
-  const [categorymenu, setcategoryment] = useState(0)
+  const [categorymenu, setcategorymenu] = useState(0)
+  const [catmenu, setcatmenu] = useState(0)
   const modal = useRef()
 
   useEffect((e) => {
@@ -22,16 +24,16 @@ export default function Header () {
       setNav(0)
     } else {
       setNav(1)
-      setcategoryment(0)
+      setcategorymenu(0)
     }
   }
 
   function showcategorymenu () {
 
     if (categorymenu == 1) {
-      setcategoryment(0)
+      setcategorymenu(0)
     } else {
-      setcategoryment(1)
+      setcategorymenu(1)
     }
 
   }
@@ -44,16 +46,24 @@ export default function Header () {
     modal.current.close()
   }
 
+  function showCat () {
+    catmenu == 1 ? setcatmenu(0) : setcatmenu(1)
+  }
+
 
 
   return (<>
-    <header>
       <div className={layout.headerContainer}>
         <div className={layout.logoContainer}><Link href='/'><Image alt="image" className={layout.logo} src={logo} sizes="100vw"></Image></Link></div>
         <div className={layout.headerDiv2}>
           <div>
-          <ul>
-            <li className={layout.navshow}>Categories</li>
+          <ul className={layout.nav}>
+            <li className={layout.navshow}>
+              <span onClick={showCat}>Categories</span>
+              { catmenu == 1 && <ul className={layout.category_dropdwon}>
+                <Categorymeny></Categorymeny>
+              </ul>}            
+            </li>
             <li className={layout.navshow}><Link href='/'>Opportunities</Link></li>
             <li className={layout.navshow}>
             <div className={layout.search_button} onClick={showmodal}>
@@ -86,11 +96,7 @@ export default function Header () {
                 <li onClick={showcategorymenu}>Categories</li>
                 <li className={layout.categorymenu}>
                   {categorymenu == 1 && <ul>
-                    <li>Planning</li>
-                    <li>Retirement</li>
-                    <li>Lifestyle</li>
-                    <li>Trading</li>
-                    <li>DIY Wealth</li>
+                    <Categorymeny></Categorymeny>
                   </ul>}
                   </li>
                 <li><Link href='/'>Opportunities</Link></li>
@@ -116,5 +122,4 @@ export default function Header () {
           </div>
           </dialog>
         </div>
-      </header>
   </>)}

@@ -1,9 +1,9 @@
-'use client'
 
 import styles from './page.module.css'
 import Image from 'next/image'
 import img1 from '../../../public/brand-logo.png'
 import Link from 'next/link'
+import Submit from './submit'
 
 
 export default function SubscribePage () {
@@ -30,14 +30,7 @@ export default function SubscribePage () {
         </Link>
         </div>
       </div>
-      <div className={styles.form}>
-      <form onSubmit={handlesubmit}>
-          <h1>Subscribe to Pie</h1>
-          <input name='name' placeholder='Your Name' type='text'></input>
-          <input name='email' placeholder='Your Email' type='email'></input>
-          <button type='submit'>Subscribe</button>
-        </form>
-      </div>
+        <Submit></Submit>
       </div>
   </div>)
 }

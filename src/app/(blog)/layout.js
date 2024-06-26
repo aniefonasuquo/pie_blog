@@ -11,7 +11,9 @@ import FooterSubmit from "./components/footersubmit";
 export default function BlogLayout({ children }) {
   return (
           <div className={styles.globalcontent} >
-            <Header></Header>
+            <header>
+              <Header></Header>
+            </header>
                 {children}
             <footer>
               <div className={styles.footerContent}>
