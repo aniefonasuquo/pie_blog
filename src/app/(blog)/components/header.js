@@ -50,8 +50,6 @@ export default function Header () {
     catmenu == 1 ? setcatmenu(0) : setcatmenu(1)
   }
 
-
-
   return (<>
       <div className={layout.headerContainer}>
         <div className={layout.logoContainer}><Link href='/'><Image alt="image" className={layout.logo} src={logo} sizes="100vw"></Image></Link></div>
@@ -101,9 +99,7 @@ export default function Header () {
                   </li>
                 <li><Link href='/'>Opportunities</Link></li>
                 <li>
-                  <div>
                     <Link href='/subscribe'><span className={layout.join_small_link}>Subscribe</span></Link>
-                    </div>
                   </li>
                 </ul>
                 </div> 

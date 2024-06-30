@@ -12,7 +12,8 @@ export default async function Post ({params}) {
   const post = await getSinglePost(params.title)
 
   const wordcount = 5
-  const published = new Date(post.published)
+  const published = new Date(post._modified)
+  console.log(post._created)
 
   return (
   <div className=''>
@@ -45,8 +46,8 @@ export default async function Post ({params}) {
           </div>
         </div>
       </div>
-    <div className={styles.post}>
-          {post.content}
+    <div className={styles.post} dangerouslySetInnerHTML={{__html: post.content}}>
+          {/* {post.content} */}
       </div>
     {/* <div>Comment</div> */}
     <Recommended></Recommended>
