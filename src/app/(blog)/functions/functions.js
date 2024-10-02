@@ -2,7 +2,7 @@ import axios from "axios"
 
 
 const endpoint = 'https://data.usepie.ng/api/content'
-const api_key = "USR-7e23ab2ad21072fd09644b3cc3a0ca90d2ce6cd1"
+const api_key = process.env.API_KEY
 
 
 export async function getAllPosts () {
