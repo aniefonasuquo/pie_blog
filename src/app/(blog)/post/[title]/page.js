@@ -7,13 +7,29 @@ import { getSinglePost } from '../../functions/functions'
 import layout from './../../page.module.css'
 import Sharing from '../../components/share'
 
-export default async function Post ({params}) {
+export async function generateMetadata({ params, searchParams }, parent) {
+  // read route params
+  const post = await getSinglePost(params.title)
+ 
+  // optionally access and extend (rather than replace) parent metadata
+  // const previousImages = (await parent).openGraph?.images || []
+ 
+  return {
+    title: `${post.title} - Pie Blog`,
+    // openGraph: {
+    //   images: ['/some-specific-page-image.jpg', ...previousImages],
+    // },
+  }
+}
 
+export default async function Post ({params}) {
+   
   const post = await getSinglePost(params.title)
 
   const wordcount = 5
-  const published = new Date(post._modified)
-  console.log(post._created)
+  const published = new Date(post._created)
+
+  console.log(published)
 
   return (
   <div className=''>
@@ -28,17 +44,16 @@ export default async function Post ({params}) {
           </div>
         <h1>{post.title}</h1>
         <div>
-          <ul>
-            <li>Point 1</li>
-            <li>Point 2</li>
-            <li>Point 3</li>
-            <li>Point 4</li>
+          <ul className={styles.highlights}>
+            {post.highlights.map((item)=> (
+              <li key={item}>- {item}.</li>
+            ))}
             </ul>
           </div>
         <div>
           <span>5 Mins Read . {published.toDateString()}</span>
           </div>
-        <div className={styles.share}><Sharing url={`https://pie-blog.vercel.app/post${post._id}`} title={post.title}></Sharing></div>
+        <div className={styles.share}><Sharing url={`https://blog.usepie.ng/post/${post.slug}`} title={post.title}></Sharing></div>
         </div>
       <div className={styles.top_section_right}>
         <div className={styles.top_img_container}>

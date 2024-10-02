@@ -4,6 +4,15 @@
   margin: 0 auto 7vh;
 }
 
+.highlights {
+  list-style: circle;
+  list-style-type: disc;
+}
+
+.highlights li{
+  margin-bottom: 5px;
+}
+
 .top_section {
   background-color: rgba(52, 54, 94, 1);
   color: bisque;

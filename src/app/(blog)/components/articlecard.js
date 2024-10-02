@@ -8,11 +8,11 @@ export default function ArticleCard ({data}) {
 
   return (<>
         {
-            data.map(({_id, title, tags, content, featured_image, image_link, excerpt}) => 
+            data.map(({_id, title, tags, content, featured_image, image_link, excerpt, slug}) => 
               (
                 <div className={layout.feature_card_wrap} key={_id}>
                 <div className={layout.article_img_container}>
-                  <Link href={`/post/${_id}`}>
+                  <Link href={`/post/${slug}`}>
                   <Image alt="image" className={layout.featured_post_img} src={image_link} height={`${featured_image.height}`} width={`${featured_image.width}`} ></Image>
                   </Link>
                   <div className={layout.article_category_container}>
@@ -25,7 +25,7 @@ export default function ArticleCard ({data}) {
                   </div>              
                 </div>
                 <div className={layout.article_brief_container}>
-                  <Link href={`/post/${_id}`}>
+                  <Link href={`/post/${slug}`}>
                     <h3 className={layout.LandingArticleHeading}>{title}</h3>
                      <p>{excerpt.substring(0, 200)}</p>
                   </Link>

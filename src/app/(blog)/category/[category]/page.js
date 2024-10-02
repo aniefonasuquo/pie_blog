@@ -6,6 +6,16 @@ import ArticleCard from '../../components/articlecard'
 import { getCategoryPosts } from '../../functions/functions'
 import LoopSection from '../../components/loopsection'
 
+export async function generateMetadata({ params, searchParams }, parent) {
+ 
+  return {
+    title: `Pie Blog Archives: ${params.category}`,
+    // openGraph: {
+    //   images: ['/some-specific-page-image.jpg', ...previousImages],
+    // },
+  }
+}
+
 
 export default async function Category ({params}) {
 

@@ -8,9 +8,12 @@ const inter = Inter({ subsets: ["latin"] });
 const eudoxus = localFont({src: "../../public/Eudoxus-Sans-main/Eudoxus-Sans-font/EudoxusSans-Regular.woff2"})
 
 export const metadata = {
-  title: "Pie Blog",
-  description: "Improve Your Wealth",
-};
+  title: 'Pie Blog - Resources to Improve Your Wealth',
+  openGraph: {
+    title: 'Pie Blog',
+    description: 'Improve Your Wealth',
+  },
+}
 
 export default function RootLayout({children}) {
   return (

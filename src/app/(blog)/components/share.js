@@ -21,7 +21,7 @@ import {
   export default function Sharing ({url, title}) {
     return (<>
     <div>
-    <EmailShareButton url={url} subject={'Next Share'} body="body"> 
+    <EmailShareButton url={url} subject={title} body="body"> 
     <EmailIcon size={32} round />
     </EmailShareButton>  
     </div>
