@@ -9,6 +9,7 @@ import FooterSubmit from "./components/footersubmit";
 
 export const metadata = {
   title: 'Pie Wealth Blog - Get Informed on The Right Wealth Decision',
+  description: 'Gain insight to help you make right wealth decisions fit for your dreams',  
   openGraph: {
     title: 'Pie Wealth Blog - Get Informed on The Right Wealth Decision',
     description: 'Gain insight to help you make right wealth decisions fit for your dreams',

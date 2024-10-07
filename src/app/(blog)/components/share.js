@@ -17,6 +17,7 @@ import {
   LinkedinIcon,
   WhatsappShareButton,
   WhatsappIcon} from "next-share";
+  import {ShareSocial} from 'react-share-social'
 
   export default function Sharing ({url, title}) {
     return (<>
@@ -60,7 +61,13 @@ import {
     <RedditShareButton url={url} title={title}>
       <RedditIcon size={32} round />
     </RedditShareButton>
-
     </div>
+
+    {/* <ShareSocial 
+     url ={url}
+     socialTypes={['facebook','twitter','reddit','linkedin']}
+     title={title}
+   /> */}
+
     </>)
   }

@@ -18,9 +18,15 @@ export async function generateMetadata({ params, searchParams }, parent) {
  
   return {
     title: `${post.title} - Pie Wealth Blog`,
+    description: 'Subscribe to get access to resources that help you make the right wealth decisions',
     openGraph: {
       title: `${post.title} - Pie Wealth Blog`,
-      images: [post.image_link],
+      images: [
+        {
+          url: post.image_link, // Must be an absolute URL
+          width: 1200,
+          height: 628,
+        },],
       description: 'Subscribe to get access to resources that help you make the right wealth decisions',
       url: 'https://blog.usepie.ng',
       siteName: 'Pie Wealth Blog',
@@ -29,7 +35,12 @@ export async function generateMetadata({ params, searchParams }, parent) {
       card: 'summary_large_image',
       title: `${post.title} - Pie Wealth Blog`,
       description: 'Subscribe to get access to resources that help you make the right wealth decisions',
-      images: [post.image_link], // Must be an absolute URL
+      images:  [
+        {
+          url: post.image_link, // Must be an absolute URL
+          width: 1200,
+          height: 628,
+        },], // Must be an absolute URL
     },
     other: {
       custom: 'meta',
