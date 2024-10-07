@@ -19,7 +19,7 @@ export default async function Home() {
     <div  className={styles.main}>
       <div className={styles.hero_global_wrap}>
         <div className={styles.herowrap}>
-          <h1 className={styles.herotextwrap}>Make The Best Investment Decisions For You</h1>
+          <h1 className={styles.herotextwrap}>Make The Right Investment Decision</h1>
           <div className={styles.hero_subscribe_wrap}>
             <div><Link href='/subscribe'><button>Become a subscriber</button></Link></div>
             <div className={styles.hero_subscribe_text}><span>Get the email newsletter and unlock access to members-only content and updates</span></div>

@@ -25,16 +25,16 @@ export default function BlogLayout({ children }) {
                   <div className={styles.footerbuttom_top}>
                     <div className={styles.footerbuttom_logo_container}>
                       <div className={styles.logoContainer}><Link href='/'><Image alt="image" className={styles.logo} src={logo} sizes="100vw"></Image></Link></div>
-                      <p>Win with you financial</p>
+                      <p>Helps individuals invest in the right investment opportunities that suit their unique wealth desires.</p>
                     </div>
                     <div className={styles.footerbuttom_nav}>
                       <div className={styles.footernav_card}>
                         <h3>Social</h3>
                         <ul>
-                          <li><Link href='/'>Twitter</Link></li>
-                          <li><Link href='/'>Instagram</Link></li>
-                          <li><Link href='/'>linkedin</Link></li>
-                          <li><Link href='/'>Youtube</Link></li>
+                          <li><Link href='https://x.com/piewealth' target="_blank">Twitter</Link></li>
+                          <li><Link href='https://www.instagram.com/wealth.pie/' target="_blank">Instagram</Link></li>
+                          <li><Link href='/https://www.linkedin.com/company/pie-wealth' target="_blank">linkedin</Link></li>
+                          <li><Link href='/' target="_blank">Youtube</Link></li>
                         </ul>
                       </div>
                     </div>

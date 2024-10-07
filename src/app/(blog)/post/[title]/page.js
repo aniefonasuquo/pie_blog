@@ -9,16 +9,31 @@ import Sharing from '../../components/share'
 
 export async function generateMetadata({ params, searchParams }, parent) {
   // read route params
+
   const post = await getSinglePost(params.title)
+  // console.log(post)
  
   // optionally access and extend (rather than replace) parent metadata
   // const previousImages = (await parent).openGraph?.images || []
  
   return {
-    title: `${post.title} - Pie Blog`,
-    // openGraph: {
-    //   images: ['/some-specific-page-image.jpg', ...previousImages],
-    // },
+    title: `${post.title} - Pie Wealth Blog`,
+    openGraph: {
+      title: `${post.title} - Pie Wealth Blog`,
+      images: [post.image_link],
+      description: 'Read and subscribe to resources that help you make the right wealth decisions',
+      url: 'https://blog.usepie.ng',
+      siteName: 'Pie Wealth Blog',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${post.title} - Pie Wealth Blog`,
+      description: 'Read and subscribe to resources that help you make the right wealth decisions',
+      images: [post.image_link], // Must be an absolute URL
+    },
+    other: {
+      custom: 'meta',
+    },
   }
 }
 

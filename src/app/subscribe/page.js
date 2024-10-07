@@ -5,6 +5,13 @@ import img1 from '../../../public/brand-logo.png'
 import Link from 'next/link'
 import Submit from './submit'
 
+export const metadata = {
+  title: 'Subscribe to Pie Wealth Blog',
+  openGraph: {
+    title: 'Subscribe to Pie Wealth Blog',
+    description: 'Resources that help you make the right wealth decisions',
+  },
+}
 
 export default function SubscribePage () {
 

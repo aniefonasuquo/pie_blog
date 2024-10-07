@@ -91,7 +91,7 @@ export default function Header () {
           </div>
             <div className={layout.mobileNav}>
               <ul>
-                <li onClick={showcategorymenu}>Categories</li>
+                <li onFocus={showcategorymenu}>Categories</li>
                 <li className={layout.categorymenu}>
                   {categorymenu == 1 && <ul>
                     <Categorymeny></Categorymeny>
