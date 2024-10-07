@@ -52,7 +52,7 @@ import {
 
     </div>
     <div>
-    <LinkedinShareButton url={url}>
+    <LinkedinShareButton url={url} title={title}>
       <LinkedinIcon size={32} round />
     </LinkedinShareButton>
 

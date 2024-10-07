@@ -32,7 +32,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
       siteName: 'Pie Wealth Blog',
     },
     twitter: {
-      card: 'summary_large_image',
+      card: post.image_link,
       title: `${post.title} - Pie Wealth Blog`,
       description: 'Subscribe to get access to resources that help you make the right wealth decisions',
       images:  [
