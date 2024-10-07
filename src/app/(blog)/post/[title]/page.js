@@ -21,14 +21,14 @@ export async function generateMetadata({ params, searchParams }, parent) {
     openGraph: {
       title: `${post.title} - Pie Wealth Blog`,
       images: [post.image_link],
-      description: 'Read and subscribe to resources that help you make the right wealth decisions',
+      description: 'Subscribe to get access to resources that help you make the right wealth decisions',
       url: 'https://blog.usepie.ng',
       siteName: 'Pie Wealth Blog',
     },
     twitter: {
       card: 'summary_large_image',
       title: `${post.title} - Pie Wealth Blog`,
-      description: 'Read and subscribe to resources that help you make the right wealth decisions',
+      description: 'Subscribe to get access to resources that help you make the right wealth decisions',
       images: [post.image_link], // Must be an absolute URL
     },
     other: {
