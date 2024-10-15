@@ -14,6 +14,9 @@
 
 }
 
+.categorylist {
+  list-style: none;
+}
 
 .headerContainer,
 .searchwrap,
@@ -460,7 +463,7 @@
 
 .featured_img_container img {
   border-radius: 1rem;
-  border: solid 1px bisque;
+  border: solid 1px rgba(141, 145, 221, 0.2);
   width: 100%;
   height: 100%;
   object-fit: fill;
