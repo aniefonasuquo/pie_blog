@@ -405,10 +405,12 @@
 }
 
 .article_category {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   border: none;
-  color: rgba(52, 54, 94, 1);
-  background-color:  rgba(52, 54, 94, 0.2);
+  /* color: rgba(52, 54, 94, 1); */
+  color:grey;
+  background-color: rgba(128, 128, 128, 0.1);
+  /* background-color: white; */
   border-radius: 2rem;
   padding: 0.5em 0.8em;
   margin-right: 0.5em;
