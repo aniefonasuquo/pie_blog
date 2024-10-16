@@ -90,7 +90,7 @@ export default function Header () {
           </svg>
           </div>
             <div className={layout.mobileNav}>
-              <ul>
+              <ul className={layout.categorylist}>
                 <li onFocus={showcategorymenu}>Categories</li>
                 <li className={layout.categorymenu}>
                   {categorymenu == 1 && <ul>

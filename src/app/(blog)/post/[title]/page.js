@@ -74,7 +74,7 @@ export default async function Post ({params}) {
         <div>
           <ul className={styles.highlights}>
             {post.highlights.map((item) => (
-              <li key={item}>- {item}.</li>
+              <li key={item}>{item}.</li>
             ))}
             </ul>
           </div>
