@@ -739,7 +739,7 @@
   }
 
   .feature_card_wrap {
-    flex: 1 0 370px;
+    flex: 0 0 370px;
   }
 
 }
