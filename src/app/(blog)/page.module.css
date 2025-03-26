@@ -738,10 +738,7 @@
     font-size: 1.5rem;
   }
 
-  .feature_card_wrap {
-    flex: 0 0 370px;
-  }
-
+  
 }
 
 @media (max-width: 480px) {
@@ -749,8 +746,11 @@
     padding-top: 2vh;
     font-size: 2rem;
   }
-
-
+  
+  
+  .feature_card_wrap {
+    flex: 0 0 300px;
+  }
 
   .footersubscribe form input{
     /* font-size: 1.2rem; */
