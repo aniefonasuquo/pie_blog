@@ -6,10 +6,9 @@ import Loop from "./components/loop";
 import Recommended from "./components/recommended";
 import Category from "./components/category";
 import { getFirstSixPosts } from "./functions/functions";
-import ArticleCard from "./components/articlecard";
-import FeatureCard from "./components/featurecards";
 import { Suspense } from "react";
 import { LayoutRouter } from "next/dist/server/app-render/entry-base";
+import FeatureCard from "./components/featurecards";
 
 export default async function Home() {
 
@@ -25,18 +24,7 @@ export default async function Home() {
             <div className={styles.hero_subscribe_text}><span>Get the email newsletter and unlock access to members-only content and updates</span></div>
           </div>
         </div>
-        <div className={styles.featured_section_wrap}>
-        <div className={styles.featured_section_top}>
-          <h2 className={styles.LandingSectionHeading}>Get started with our best articles</h2>
-          <div className={styles.feature_scroll}>
-            <div>Prev</div>
-            <div>Next</div>
-          </div>
-        </div>
-        <div className={styles.featured_row}>
-            <FeatureCard data={data}></FeatureCard>
-        </div>
-        </div>
+        <FeatureCard data={data}></FeatureCard>
       </div>
       <div className={styles.loop_global_wrap}>
         <div className={styles.loop_section}>

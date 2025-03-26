@@ -13,10 +13,12 @@
 
 .head_container h1 span{
   position: absolute;
+  top: -10%;
   padding: 0.5em 0.8em;
   background-color: grey;
-  font-size: 2vh;
-  border-radius: 1rem;
+  font-size: 1.5vh;
+  border-radius: 0.6rem;
+  margin-left: 0.2rem;
 }
 
 .head_container p {

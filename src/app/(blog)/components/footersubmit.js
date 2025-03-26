@@ -23,9 +23,10 @@ export default function FooterSubmit () {
   
   return (
       <div className={layout.submitwrapper}>
-      <form onSubmit={handleSubmit(submit)}>
-        <input {...register('email')} type="email" placeholder="Your Email Address"></input>
-        <button type="submit">{subresponse != 1? "Subscribe" : "Success!!"}</button>
+      <form className={layout.footerInput} onSubmit={handleSubmit(submit)}>
+        <input {...register('email')} type="email" placeholder="Your Email Address">
+          </input>
+          <button className={layout.footerSubmit} type="submit">{subresponse != 1? "Subscribe" : "Success!!"}</button>
         </form>
         <div>{subresponse == 2 && <span>oops! Something went wrong</span>}</div>
       </div>
