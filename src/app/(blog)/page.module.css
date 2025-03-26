@@ -377,9 +377,7 @@
 }
 
 .featured_scroll {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 29%;
+  display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   overscroll-behavior-x: contain;
@@ -391,12 +389,12 @@
   gap: 1rem;
 }
 
-.featured_scroll > * {
-  scroll-snap-align: start;
-}
-
 .featured_scroll::-webkit-scrollbar {
   width: 0;
+}
+
+.featured_scroll > * {
+  scroll-snap-align: start;
 }
 
 .article_card_wrap {
@@ -404,7 +402,8 @@
 }
 
 .feature_card_wrap {
-  flex: 0 0 370px;
+  min-width: 370px;
+  flex: 0 0 450px;
 }
 
 .article_category_container {
