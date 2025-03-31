@@ -84,8 +84,8 @@ export default function Header () {
           {mobileNav == 1 &&
           <div className={layout.mobilemenu}>
             <div onClick={changeNav} className={layout.closebutton}>        
-              <svg width="40px" height="40px" viewBox="0 0 24 24" fill="#34365e" xmlns="http://www.w3.org/2000/svg">
-                <g id="Menu / Close_MD"><path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#34365e" stroke-width="2" strokeLinecap="round" strokeLinejoin="round"/></g>
+              <svg width="40px" height="40px" viewBox="0 0 24 24" fill="#ffe4c4" xmlns="http://www.w3.org/2000/svg">
+                <g id="Menu / Close_MD"><path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#ffe4c4" stroke-width="2" strokeLinecap="round" strokeLinejoin="round"/></g>
                 </svg>
               </div>
             <div className={layout.mobileNav}>
