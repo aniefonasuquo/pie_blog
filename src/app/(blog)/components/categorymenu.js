@@ -5,7 +5,8 @@ export default function Categorymenu () {
 
   const categories = ["Wealth", "Investing", "Knowledge", "Stock Market", "Retirement", "Lifestyle"]
 
-  return (<>
-    {categories.map((item) => (<li className={styles.categorylist} key={item}><a href={`/category/${item}`}>{item}</a></li>))}
+  return (<><ul className={styles.categorylist}>
+    {categories.map((item) => (<li key={item}><a href={`/category/${item}`}>{item}</a></li>))}
+  </ul>
   </>)
 }

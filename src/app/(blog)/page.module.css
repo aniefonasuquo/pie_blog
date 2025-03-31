@@ -14,10 +14,6 @@
 
 }
 
-.categorylist {
-  list-style: none;
-}
-
 .headerContainer,
 .searchwrap,
 .top_section,
@@ -123,6 +119,7 @@
   background-color: rgb(52,54,95);
   padding-right: 20px;
   transition: all 2s ease-in-out 3s;
+  z-index: 1000;
 }
 
 .menubutton {
@@ -132,12 +129,38 @@
 
 .mobilemenu {
   display: none;
-  position: fixed;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
+}
+
+.mobileNav {
+  list-style: none;
+  margin-bottom: 5rem;
+}
+
+.mobileNav > ul > li {
+  margin-bottom: 1.5rem;
+}
+
+.mobileNav ul {
+  list-style: none;
+}
+
+.categorylist {
+  margin: 0 0 1rem 1rem;
+}
+
+.categorylist > li {
+  margin-bottom: 0.5rem;;
+}
+
+.mobile_menu_subscribe {
+  display: flex;
+  justify-content: center;
+  background-color: #34365e;
+  color: #ffe4c4;
+  margin: 0 10px;
+  border-radius: 10px;
+  padding: 1rem;
+  font-weight: normal;
 }
 
 .closebutton {
@@ -603,12 +626,19 @@
   }
   
   .mobilemenu {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 100%;
-    background-color: rgba(52, 54, 94, 1);
-    padding: 4vh;
+    color: #34365e;
+    background-color: bisque;
+    padding: 2rem;
+    font-size: 1.5rem;
   }
 
   .categorymenu {
@@ -620,17 +650,6 @@
     display: block;
   }   
   
-  
-  .mobileNav {
-    /* text-align: center; */
-    font-size: 2rem;
-    padding: 4vh 0 2vh;
-  }
-
-  .mobileNav ul {
-    font-size: 1.5rem;
-    
-  }
 
   .join_small_link {
     color: rgb(52,54,95);
@@ -640,14 +659,6 @@
     border-radius: 2rem;
     font-weight: 500;
     font-weight: bold;
-  }
-
-  .mobileNav ul li{
-    margin: 0.5em;
-  }
-
-  .mobileNav ul li:nth-child(3) {
-    margin-top: 1em;
   }
 
   .logoContainer {
@@ -738,7 +749,6 @@
     font-size: 1.5rem;
   }
 
-  
 }
 
 @media (max-width: 480px) {
