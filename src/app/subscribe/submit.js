@@ -26,7 +26,7 @@ export default function Submit () {
     <form onSubmit={handleSubmit(submit)}>
         <h1>Subscribe to Pie</h1>
         <input {...register} name='name' placeholder='Your Name' type='text'></input>
-        <input {...register} name='email' placeholder='Your Email' type='email'></input>
+        <input {...register('email')} name='email' placeholder='Your Email' type='email'></input>
         <button type='submit'>{subresponse != 1? "Subscribe" : "Success!!"}</button>
       </form>
     </div>

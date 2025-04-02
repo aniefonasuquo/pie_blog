@@ -3,6 +3,7 @@ import img1 from './../../../../public/img1.jpg'
 import layout from '../page.module.css'
 import Category from "./category";
 import Image from "next/image";
+import { splitWords } from "./featurecards";
 
 export default function ArticleCard ({data}) {
 
@@ -27,7 +28,7 @@ export default function ArticleCard ({data}) {
                 <div className={layout.article_brief_container}>
                   <Link href={`/post/${slug}`}>
                     <h3 className={layout.LandingArticleHeading}>{title}</h3>
-                     <p>{excerpt.substring(0, 200)}</p>
+                     <p>{splitWords(excerpt)}...</p>
                   </Link>
                 </div>
               </div>))

@@ -28,7 +28,7 @@ export default function FooterSubmit () {
           </input>
           <button className={layout.footerSubmit} type="submit">{subresponse != 1? "Subscribe" : "Success!!"}</button>
         </form>
-        <div>{subresponse == 2 && <span>oops! Something went wrong</span>}</div>
+        <div>{subresponse == 2 && <span>oops! Something went wrong</span>}{subresponse == 1 && <span>A confirmation email has been sent to your inbox</span>}</div>
       </div>
 
   )

@@ -15,8 +15,6 @@ export async function generateMetadata({ params, searchParams }, parent) {
  
   // optionally access and extend (rather than replace) parent metadata
   // const previousImages = (await parent).openGraph?.images || []
-
-  console.log(post.image_link)
  
   return {
     title: `${post.title} - Pie Wealth Blog`,
@@ -56,8 +54,6 @@ export default async function Post ({params}) {
 
   const wordcount = 5
   const published = new Date(post._created)
-
-  console.log(published)
 
   return (
   <div className=''>

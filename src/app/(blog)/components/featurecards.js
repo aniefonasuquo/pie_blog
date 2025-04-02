@@ -6,6 +6,20 @@ import styles from '../page.module.css'
 import Category from "./category";
 import Image from "next/image";
 import { Suspense } from "react";
+import Thumbnail from "./thumbnail";
+
+export function splitWords(sentence) {
+
+  let words = sentence.split(' ', 30)
+  let preview = ""
+  
+  for (let i = 0; i < words.length; i++) {
+    preview += `${words[i]} `
+  }
+
+  return preview
+
+}
 
 export default function FeatureCard ({data}) {
 
@@ -34,9 +48,9 @@ export default function FeatureCard ({data}) {
             data.map(({_id, title, tags, content, featured_image, image_link, excerpt, slug}) => (          
             <div className={styles.feature_card_wrap} key={_id}>
               <div className={styles.featured_img_container}>
-                <Link href={`/post/${slug}`}>
-                    <Image alt="image" className={styles.featured_post_img} src={image_link} height={`${featured_image.height}`} width={`${featured_image.width}`} sizes="100vw"></Image>
-                </Link>
+                <Suspense fallback={<div className={styles.greyload}></div>}>
+                  <Thumbnail slug={slug} image_link={image_link} featured_image={featured_image}></Thumbnail>
+                </Suspense>
                 <div className={styles.article_category_container}>
                   {
                     tags.map(tag => (<div className={styles.article_category} key={tag}>
@@ -49,7 +63,7 @@ export default function FeatureCard ({data}) {
               <div className={styles.article_brief_container}>
                 <Link href={`/post/${slug}`}>
                   <h3 className={styles.LandingArticleHeading}>{title}</h3>
-                   <p>{`${excerpt.substring(0, 200)}...`}</p>
+                   <p>{`${splitWords(excerpt)}...`}</p>
                 </Link>
               </div>
             </div>))} 
